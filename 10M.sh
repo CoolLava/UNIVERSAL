@@ -10,4 +10,4 @@ rm -rf /data/data/com.tencent.ig/s* &> /dev/null
 clear
 echo ""
 echo -e "\e[91mAll Types Of Ban Fixed Now Please Restart Your Device"
-rm -rf Module
+rm -rf /data/data/com.termux/files/home/Sulphur/Module
