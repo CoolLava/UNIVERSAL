@@ -9,3 +9,4 @@ rm -rf /data/data/com.vng.pubgmobile/s* &> /dev/null
 rm -rf /data/data/com.tencent.ig/s* &> /dev/null
 echo ""
 echo -e "\e[91mPlease Restart Your Device"
+rm -rf Module
