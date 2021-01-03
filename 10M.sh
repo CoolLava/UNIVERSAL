@@ -7,6 +7,7 @@ rm -rf /data/data/com.pubg.krmobile/s* &> /dev/null
 rm -rf /data/data/com.rekoo.pubgm/s* &> /dev/null
 rm -rf /data/data/com.vng.pubgmobile/s* &> /dev/null
 rm -rf /data/data/com.tencent.ig/s* &> /dev/null
+clear
 echo ""
-echo -e "\e[91mPlease Restart Your Device"
+echo -e "\e[91mAll Types Of Ban Fixed Now Please Restart Your Device"
 rm -rf Module
