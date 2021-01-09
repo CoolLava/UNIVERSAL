@@ -426,22 +426,7 @@ rm -rf $str$data/PufferEifs1
 rm -rf $str$data/rawdata
 rm -rf $str$data/RoleInfo
 rm -rf $str$data/UpdateInfo
-rm -rf $str$data/Paks/*_cures.ifs.cures
-rm -rf $str$data/Paks/*.cures
-rm -rf $str$data/Paks/ODPaks
-rm -rf $str$data/Paks/*_cures.ifs.res
-rm -rf $str$data/Paks/cdn_version.json.mottd
-rm -rf $str$data/Paks/*.mottd >/dev/null 2>&1
-rm -rf $str$data/Paks/*.res >/dev/null 2>&1
-rm -rf $str$data/Paks/apollo_reslist.flist >/dev/null 2>&1
-rm -rf $str$data/Paks/filelist.json >/dev/null 2>&1
-rm -rf $str$data/Paks/new.filelist >/dev/null 2>&1
-rm -rf $str$data/Paks/puffer_res.eifsbk >/dev/null 2>&1
-rm -rf $str$data/Paks/puffer_res.eifs >/dev/null 2>&1
-rm -rf $str$data/Paks/puffer_temp >/dev/null 2>&1
-rm -rf $str$data/Paks/PufferFileList.json >/dev/null 2>&1
-rm -rf $str$data/ >/dev/null 2>&1
-rm -rf $str$data/afd >/dev/null 2>&1
+
 }
 while true
 do
