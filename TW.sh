@@ -455,6 +455,7 @@ unport
 unport
 echo ""
 echo -e "$Yellow Antiban Closed You Can Exit From Termux"
+rm -rf /data/media/Adarsh
 exit
 else
 Adarsh
