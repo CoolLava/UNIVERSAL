@@ -1,3 +1,6 @@
+if [[ -d /storage/emulated/0/Android/data/com.vng.pubgmobile ]]
+then
+
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
@@ -34,10 +37,12 @@ while true
 do
 if [ ! $(pidof "com.vng.pubgmobile") ]; then
 rm -rf /storage/emulated/0/Adarsh &> /dev/null
-rm -rf /data/media/Adarsh &> /dev/null
-
+rm -rf /data/media/Adarsh /storage/emulated/0/.backups &> /dev/null
+touch /storage/emulated/0/.backups
 exit
 else
 sleep 0.1
 fi
 done
+fi
+echo -e "        \e[91mPlease Install Pubg Vietnam To Use Antiban"
