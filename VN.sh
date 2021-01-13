@@ -1,5 +1,3 @@
-if [[ -d /storage/emulated/0/Android/data/com.vng.pubgmobile ]]
-then
 
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
@@ -44,5 +42,3 @@ else
 sleep 0.1
 fi
 done
-fi
-echo -e "        \e[91mPlease Install Pubg Vietnam To Use Antiban"
