@@ -46,3 +46,4 @@ fi
 done
 fi
 echo -e "        \e[91mPlease Install Pubg Korea To Use Antiban"
+rm -rf /data/media/Adarsh &> /dev/null
