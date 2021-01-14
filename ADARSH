@@ -1,4 +1,3 @@
-#!/bin/sh
 clear
 rm -rf /data/media/ADARSH  &> /dev/null
 SSC="20210904"
