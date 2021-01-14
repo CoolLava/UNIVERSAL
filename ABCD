@@ -324,7 +324,7 @@ echo ""
 echo -e "\e[32mTicket Is Invalid. Get Your Ticket For Free From"
 echo -e "\e[32m@onlybridge By Doing few Steps"
 sleep 5
-su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlySULPHUR/76 &> /dev/null
+su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlySULPHUR &> /dev/null
 exit
 fi
 fi
