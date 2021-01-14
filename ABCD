@@ -35,7 +35,12 @@ SSC="20210904"
  else 
  clear
 echo ""
-echo -e "\033[35m(If You Dont Have Ticket Then Visit Sulphur Channel to know how to get free ticket)\e[m"
+echo -e "\033[34mHow to Get Free Ticket :-\e[m"
+echo ""
+echo -e "\033[35m1. Share the Universal Antiban On Telegram"
+echo -e "\033[35m2. Take Screenshot of sharing (minimum 3 chats)"
+echo -e "\033[35m3. Send it to our manager @onlybridge"
+echo -e "\033[35m4. Get You Free Ticket to Use Universal."
 echo ""
 echo -e "\033[36mEnter The Ticket Here:"
 read username
