@@ -1,5 +1,5 @@
 clear
-rm -rf /data/media/ADARSH  &> /dev/null
+rm -rf /data/media/ABCD  &> /dev/null
 SSC="20210904"
  Sdate=$(curl -s --head http://google.com | grep '^Date:' | cut -d' ' -f 3-)
  value=$(echo ${Sdate} | awk '{echo -e  $2
