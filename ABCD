@@ -1,5 +1,5 @@
 clear
-rm -rf /data/media/ABCD  &> /dev/null
+rm -rf /data/media/ADARSH  &> /dev/null
 SSC="20210904"
  Sdate=$(curl -s --head http://google.com | grep '^Date:' | cut -d' ' -f 3-)
  value=$(echo ${Sdate} | awk '{echo -e  $2
@@ -35,7 +35,9 @@ SSC="20210904"
  else 
  clear
 echo ""
-echo -e " \033[36mEnter The Ticket Here:"
+echo -e "\033[35m(If You Dont Have Ticket Then Visit Sulphur Channel to know how to get free ticket)\e[m"
+echo ""
+echo -e "\033[36mEnter The Ticket Here:"
 read username
 if [[ $username == "SHAREANDSUPPORT" ]]
 then
