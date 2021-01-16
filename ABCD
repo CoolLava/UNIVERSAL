@@ -1,54 +1,5 @@
-clear
-rm -rf /data/media/ADARSH  &> /dev/null
-SSC="20190904"
- Sdate=$(curl -s --head http://google.com | grep '^Date:' | cut -d' ' -f 3-)
- value=$(echo ${Sdate} | awk '{echo -e  $2
-}')
- months=(Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
- for i in "${!months[@]}"
- do if [ "${months[$i]}" == "${value}" ]
- then index=${i}
- fi
- done
- pos=$((${index}+1))
- tens=$((${pos}/10))
- if [ $tens -eq 0 ]
- then month="${tens}${pos}"
- else month="${pos}"
- fi
- day=$(echo ${Sdate} | awk '{echo -e  $1
-}')
- year=$(echo ${Sdate} | awk '{echo -e  $3
-}')
- serverdate=${year}${month}${day}
- sysdate=$(date -u '+%Y%m%d')
- if [ "$serverdate" -gt "$SSC" ] || [ "$sysdate" -gt "$SSC" ]
- then 
- clear
- echo -e "\e[36mUniversal Is Taken Down For Making Some internal Changes It will available to Use Again Soon."
- echo ""
- echo -e "\e[31mTill Then Join @onlySulphur On Telegram To Get Informatiom About It."
- echo ""
- sleep 5
- su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlysulphur  &> /dev/null
- exit
- else 
- clear
-echo ""
-echo -e "\033[34mHow to Get Free Ticket :-\e[m"
-echo ""
-echo -e "\033[35m1. Share the Universal Antiban On Telegram"
-echo -e "\033[35m2. Take Screenshot of sharing (minimum 3 chats)"
-echo -e "\033[35m3. Send it to our manager @onlybridge"
-echo -e "\033[35m4. Get You Free Ticket to Use Universal."
-echo ""
-echo -e "\033[36mEnter The Ticket Here:"
-read username
-if [[ $username == "SHAREANDSUPPORT" ]]
-then
-
-
-
+rm -rf /data/media/ABCD &> /dev/null
+AG() {
     show_menu(){
     OG="\033[91m"
     MG="\e[95m"
@@ -326,12 +277,77 @@ function option_picked() {
 
 clear
 show_menu
-else 
-echo ""
-echo -e "\e[32mTicket Is Invalid. Get Your Ticket For Free From"
-echo -e "\e[32m@onlybridge By Doing few Steps"
-sleep 5
-su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlySULPHUR &> /dev/null
+}
+
+
+KEY1()
+{
+su -c am start https://shrinke.me/Sulphur &> /dev/null
+sleep 1
+echo -e "\033[36mEnter The Ticket Here:"
+read username
+if [[ $username == "DAKSLEN98" ]]
+then
+AG
+else
+echo "PLEASE VISIT LINK AND COPY TICKET CORRECTLY"
 exit
 fi
+}
+
+
+KEY2()
+{
+su -c am start https://shrinke.me/Universulphur &> /dev/null
+sleep 1
+echo -e "\033[36mEnter The Ticket Here:"
+read username
+if [[ $username == "DAKW9289KK" ]]
+then
+AG
+else
+echo "PLEASE VISIT LINK AND COPY TICKET CORRECTLY"
+exit
 fi
+}
+
+
+KEY3()
+{
+su -c am start https://shrinke.me/SulphurUni &> /dev/null
+sleep 1
+echo -e "\033[36mEnter The Ticket Here:"
+read username
+if [[ $username == "DKWN8028M" ]]
+then
+AG
+else
+echo "PLEASE VISIT LINK AND COPY TICKET CORRECTLY"
+exit
+fi
+}
+
+
+clear
+echo ""
+echo -e "\033[36mHow to Get Free Ticket :-\e[m"
+echo ""
+echo -e "\033[35m1. We Are Opening A Link"
+echo -e "\033[35m2. Copy ticket From There"
+echo -e "\033[35m3. Paste Below and enter"
+echo ""
+sleep 9
+Adarsh="$(date +"%S")"
+if [[ $Adarsh > 50 ]]
+then
+KEY1
+elif [[ $Adarsh > 30 ]]
+then
+KEY2
+elif  [[ $Adarsh > 1 ]]
+then
+KEY3
+else
+exit
+fi
+
