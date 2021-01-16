@@ -1,1 +1,1 @@
-print("Delete termux and Redownload to update universal")
+echo "Delete termux and Redownload to update universal"
