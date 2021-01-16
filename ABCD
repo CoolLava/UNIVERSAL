@@ -1,4 +1,4 @@
-rm -rf /data/media/ABCD &> /dev/null
+rm -rf /data/media/ADARSH &> /dev/null
 AG() {
     show_menu(){
     OG="\033[91m"
