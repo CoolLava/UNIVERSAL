@@ -75,15 +75,7 @@ chmod -R 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
 chmod -R 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 sleep 10
 rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
-while true
-do
-if [ ! $(pidof "com.tencent.ig") ]; then
-echo -e "\e[95m      Antiban Stopped And Anticheat Started"
-else
-sleep 0.1
-show_menu;
-fi
-done
+
 
       show_menu;
       ;;
@@ -119,15 +111,7 @@ chmod -R 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
 chmod -R 777 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 sleep 10
 rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
-while true
-do
-if [ ! $(pidof "com.pubg.krmobile") ]; then
-echo -e "\e[95m      Antiban Stopped And Anticheat Started"
-else
-sleep 0.1
-show_menu;
-fi
-done
+
 
       show_menu;
       ;;
@@ -163,15 +147,7 @@ chmod -R 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
 chmod -R 777 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 sleep 10
 rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
-while true
-do
-if [ ! $(pidof "com.rekoo.pubgm") ]; then
-echo -e "\e[95m      Antiban Stopped And Anticheat Started"
-else
-sleep 0.1
-show_menu;
-fi
-done
+
 
       show_menu;
       ;;
@@ -207,15 +183,6 @@ chmod -R 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
 chmod -R 777 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
 sleep 10
 rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
-while true
-do
-if [ ! $(pidof "com.vng.pubgmobile") ]; then
-echo -e "\e[95m      Antiban Stopped And Anticheat Started"
-else
-sleep 0.1
-show_menu;
-fi
-done
 
       show_menu;
       ;;
