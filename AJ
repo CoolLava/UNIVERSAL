@@ -23,7 +23,7 @@ AG() {
     echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
     echo ""
     echo ""
-    echo "${OG} Warning :- Flash Speed Hack May Lead To Ban So Dont Use It Till Further News."
+    echo -e "${OG} Warning :- Flash Speed Hack May Lead To Ban So Dont Use It Till Further News."
     
     echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
     echo -e "${MENU}••${NUMBER} 1)${MENU} GLOBAL ANTIBAN ${NORMAL}"
