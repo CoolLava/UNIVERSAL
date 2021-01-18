@@ -60,22 +60,26 @@ su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
                  
-rm -rf /data/data/com.tencent.ig/d*  /data/data/com.tencent.ig/f* /storage/emulated/0/.backups &> /dev/null
-touch /data/data/com.tencent.ig/files /storage/emulated/0/.backups
-rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*} &> /dev/null
-rm -rf /storage/emulated/0/Adarsh &> /dev/null
-mkdir /storage/emulated/0/Adarsh &> /dev/null
+rm -rf /data/data/com.tencent.ig/d*  /data/data/com.tencent.ig/f* /data/media/0/.backups /data/media/0/Android/data/com.tencent.ig/cache /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+touch /data/data/com.tencent.ig/files /data/media/0/Android/data/com.tencent.ig/cache /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+mkdir  /data/media/0/.backups
+chmod -R 000 /data/media/0/.backups
+rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*,*pandor*} &> /dev/null
+rm -rf /data/media/0/Adarsh &> /dev/null
+mkdir /data/media/0/Adarsh &> /dev/null
 chmod -R 444 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
 chmod -R 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 25
-mv /data/app/com.tencent.ig*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /storage/emulated/0/Adarsh &> /dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/* /storage/emulated/0/Adarsh &> /dev/null
-mv /storage/emulated/0/Adarsh/* /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
+mv /data/app/com.tencent.ig*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /data/media/0/Adarsh/ &> /dev/null
+mv /data/app/com.tencent.ig*/lib/arm*/* /data/media/0/Adarsh/ &> /dev/null
+chmod -R 777 /data/media/0/Adarsh/* &> /dev/null
+sleep 0.1
+mv /data/media/0/Adarsh/* /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
-chmod -R 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
-sleep 10
-rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
+chmod -R 777 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+sleep 20
+rm -rf /data/media/0/Adarsh /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
 
 
       show_menu;
@@ -96,22 +100,26 @@ su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
                  
-rm -rf /data/data/com.pubg.krmobile/d*  /data/data/com.pubg.krmobile/f* /storage/emulated/0/.backups &> /dev/null
-touch /data/data/com.pubg.krmobile/files /storage/emulated/0/.backups
-rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*} &> /dev/null
-rm -rf /storage/emulated/0/Adarsh &> /dev/null
-mkdir /storage/emulated/0/Adarsh &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/d*  /data/data/com.pubg.krmobile/f* /data/media/0/.backups /data/media/0/Android/data/com.pubg.krmobile/cache /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+touch /data/data/com.pubg.krmobile/files /data/media/0/Android/data/com.pubg.krmobile/cache /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+mkdir  /data/media/0/.backups
+chmod -R 000 /data/media/0/.backups
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*,*pandor*} &> /dev/null
+rm -rf /data/media/0/Adarsh &> /dev/null
+mkdir /data/media/0/Adarsh &> /dev/null
 chmod -R 444 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
 chmod -R 000 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 25
-mv /data/app/com.pubg.krmobile*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /storage/emulated/0/Adarsh &> /dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/* /storage/emulated/0/Adarsh &> /dev/null
-mv /storage/emulated/0/Adarsh/* /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
+mv /data/app/com.pubg.krmobile*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /data/media/0/Adarsh/ &> /dev/null
+mv /data/app/com.pubg.krmobile*/lib/arm*/* /data/media/0/Adarsh/ &> /dev/null
+chmod -R 777 /data/media/0/Adarsh/* &> /dev/null
+sleep 0.1
+mv /data/media/0/Adarsh/* /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
-chmod -R 777 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
-sleep 10
-rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
+chmod -R 777 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+sleep 20
+rm -rf /data/media/0/Adarsh /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
 
 
       show_menu;
@@ -132,28 +140,31 @@ su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
                  
-rm -rf /data/data/com.rekoo.pubgm/d*  /data/data/com.rekoo.pubgm/f* /storage/emulated/0/.backups &> /dev/null
-touch /data/data/com.rekoo.pubgm/files /storage/emulated/0/.backups
-rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*} &> /dev/null
-rm -rf /storage/emulated/0/Adarsh &> /dev/null
-mkdir /storage/emulated/0/Adarsh &> /dev/null
+rm -rf /data/data/com.rekoo.pubgm/d*  /data/data/com.rekoo.pubgm/f* /data/media/0/.backups /data/media/0/Android/data/com.rekoo.pubgm/cache /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+touch /data/data/com.rekoo.pubgm/files /data/media/0/Android/data/com.rekoo.pubgm/cache /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+mkdir  /data/media/0/.backups
+chmod -R 000 /data/media/0/.backups
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*,*pandor*} &> /dev/null
+rm -rf /data/media/0/Adarsh &> /dev/null
+mkdir /data/media/0/Adarsh &> /dev/null
 chmod -R 444 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
 chmod -R 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 25
-mv /data/app/com.rekoo.pubgm*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /storage/emulated/0/Adarsh &> /dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/* /storage/emulated/0/Adarsh &> /dev/null
-mv /storage/emulated/0/Adarsh/* /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
+mv /data/app/com.rekoo.pubgm*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /data/media/0/Adarsh/ &> /dev/null
+mv /data/app/com.rekoo.pubgm*/lib/arm*/* /data/media/0/Adarsh/ &> /dev/null
+chmod -R 777 /data/media/0/Adarsh/* &> /dev/null
+sleep 0.1
+mv /data/media/0/Adarsh/* /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
-chmod -R 777 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
-sleep 10
-rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
-
+chmod -R 777 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+sleep 20
+rm -rf /data/media/0/Adarsh /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
 
       show_menu;
       ;;
       4) clear;
-      su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 su -c iptables -P INPUT ACCEPT
@@ -168,22 +179,26 @@ su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
                  
-rm -rf /data/data/com.vng.pubgmobile/d*  /data/data/com.vng.pubgmobile/f* /storage/emulated/0/.backups &> /dev/null
-touch /data/data/com.vng.pubgmobile/files /storage/emulated/0/.backups
-rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*} &> /dev/null
-rm -rf /storage/emulated/0/Adarsh &> /dev/null
-mkdir /storage/emulated/0/Adarsh &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/d*  /data/data/com.vng.pubgmobile/f* /data/media/0/.backups /data/media/0/Android/data/com.vng.pubgmobile/cache /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs &> /dev/null
+touch /data/data/com.vng.pubgmobile/files /data/media/0/Android/data/com.vng.pubgmobile/cache /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Logs
+mkdir  /data/media/0/.backups
+chmod -R 000 /data/media/0/.backups
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*,*mast*,*pandor*} &> /dev/null
+rm -rf /data/media/0/Adarsh &> /dev/null
+mkdir /data/media/0/Adarsh &> /dev/null
 chmod -R 444 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
 chmod -R 000 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 25
-mv /data/app/com.vng.pubgmobile*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /storage/emulated/0/Adarsh &> /dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/* /storage/emulated/0/Adarsh &> /dev/null
-mv /storage/emulated/0/Adarsh/* /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
+mv /data/app/com.vng.pubgmobile*/lib/arm*/{*cube*,*tprt*,*gc*,*GC*,*g*,*IMS*,*w*,*TD*,*tgp*,*zli*,*vli*} /data/media/0/Adarsh/ &> /dev/null
+mv /data/app/com.vng.pubgmobile*/lib/arm*/* /data/media/0/Adarsh/ &> /dev/null
+chmod -R 777 /data/media/0/Adarsh/* &> /dev/null
+sleep 0.1
+mv /data/media/0/Adarsh/* /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
-chmod -R 777 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/* &> /dev/null
-sleep 10
-rm -rf /storage/emulated/0/Adarsh /storage/emulated/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
+chmod -R 777 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+sleep 20
+rm -rf /data/media/0/Adarsh /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*.json &> /dev/null
 
       show_menu;
       ;;
