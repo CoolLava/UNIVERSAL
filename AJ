@@ -64,8 +64,8 @@ su -c iptables --flush
 rm -rf /data/data/SULPHUROP &>/dev/null
 mkdir /data/data/SULPHUROP &>/dev/nul
 chmod -R 777 /data/data/SULPHUROP
-su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL >  /data/data/SULPHUROP/VN
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL >  /data/data/SULPHUROP/GL
 sleep 4
 su -c /data/data/SULPHUROP/GL
 rm -rf /data/data/SULPHUROP &>/dev/null
@@ -95,8 +95,8 @@ rm -rf /data/data/SULPHUROP /data/data/com.rekoo.pubgm/files &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 mkdir /data/data/SULPHUROP &>/dev/nul
 chmod -R 777 /data/data/SULPHUROP
-su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/KR >  /data/data/SULPHUROP/VN
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/KR >  /data/data/SULPHUROP/KR
 sleep 4
 su -c /data/data/SULPHUROP/KR
 rm -rf /data/data/SULPHUROP &>/dev/null
@@ -127,7 +127,7 @@ touch /data/data/com.rekoo.pubgm/files
 mkdir /data/data/SULPHUROP &>/dev/nul
 chmod -R 777 /data/data/SULPHUROP
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/TW >  /data/data/SULPHUROP/VN
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/TW >  /data/data/SULPHUROP/TW
 sleep 4
 su -c /data/data/SULPHUROP/TW
 rm -rf /data/data/SULPHUROP &>/dev/null
@@ -226,3 +226,4 @@ function option_picked() {
 
 clear
 show_menu
+
