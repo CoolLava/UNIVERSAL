@@ -42,6 +42,7 @@ clear
   while [ opt != '' ]
   do
     if [[ $opt = "" ]]; then
+    rm -rf /data/data/SULPHUROP &>/dev/null
       exit;
     else
       case $opt in
@@ -202,6 +203,7 @@ exit;
       8) 
       clear;
       echo -e "\e[92mThanks For Using Universal Antiban"
+      rm -rf /data/data/SULPHUROP &>/dev/null
       exit
       ;;
      
@@ -222,3 +224,4 @@ function option_picked() {
 
 clear
 show_menu
+
