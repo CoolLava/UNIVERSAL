@@ -72,8 +72,8 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
-exit
-    show_menu;
+echo "AntiCheat Desolved In Sulphur"
+exit 
       ;;
       2) clear;
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
@@ -103,8 +103,9 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
-exit
-   show_menu;
+echo "AntiCheat Desolved In Sulphur"
+exit 
+
       ;;
       3) clear;
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
@@ -134,8 +135,9 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
-exit
-show_menu;
+echo "AntiCheat Desolved In Sulphur"
+exit 
+
             ;;
       4) clear;
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
@@ -166,8 +168,9 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
-exit
-  show_menu;
+echo "AntiCheat Desolved In Sulphur"
+exit 
+
       ;;
       5) clear;
       ADARSH=$((1+RANDOM % 10))
@@ -228,7 +231,3 @@ function option_picked() {
 
 clear
 show_menu
-
-
-
-
