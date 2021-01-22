@@ -72,6 +72,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
+exit
     show_menu;
       ;;
       2) clear;
@@ -102,6 +103,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
+exit
    show_menu;
       ;;
       3) clear;
@@ -132,6 +134,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
+exit
 show_menu;
             ;;
       4) clear;
@@ -163,6 +166,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
+exit
   show_menu;
       ;;
       5) clear;
@@ -224,4 +228,7 @@ function option_picked() {
 
 clear
 show_menu
+
+
+
 
