@@ -26,9 +26,7 @@ clear
     echo -e "${OG}    ×    Global | Korean | Taiwan | Vietnam     ×${NORMAL}"
     echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
     echo ""
-    echo ""
-    echo -e "${OG} Warning :- Dont Use Speed Hack Or ESP also Dont Play continue matches"
-    
+ 
     echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
     echo -e "${MENU}••${NUMBER} 1)${MENU} GLOBAL ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 2)${MENU} KOREA ANTIBAN ${NORMAL}"
@@ -228,7 +226,3 @@ function option_picked() {
 
 clear
 show_menu
-
-
-
-
