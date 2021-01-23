@@ -116,7 +116,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
 echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
-sleep 5
+sleep 15
 while true
 do
 if [ ! $(pidof "com.tencent.ig") ]; then
@@ -168,6 +168,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
 echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+sleep 15
 while true
 do
 if [ ! $(pidof "com.pubg.krmobile") ]; then
@@ -219,6 +220,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
 echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+sleep 15
 while true
 do
 if [ ! $(pidof "com.rekoo.pubgm") ]; then
@@ -272,6 +274,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
 echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+sleep 15
 while true
 do
 if [ ! $(pidof "com.vng.pubgmobile") ]; then
