@@ -4,6 +4,60 @@ rm -rf /data/data/SULPHUROP &>/dev/null
 mkdir /data/data/SULPHUROP &>/dev/nul
 curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/MemoryTools.h >  /data/data/SULPHUROP/MemoryTools.h
 clear
+su -c iptables -P INPUT ACCEPT
+su -c iptables -P OUTPUT ACCEPT
+su -c iptables -P FORWARD ACCEPT
+su -c ip6tables -P INPUT ACCEPT
+su -c ip6tables -P OUTPUT ACCEPT
+su -c ip6tables -P FORWARD ACCEPT
+su -c iptables -F
+su -c iptables -t nat -F
+su -c iptables -t mangle -F
+su -c iptables -X
+su -c iptables --flush
+BC() {
+su -c ip6tables -A INPUT -p tcp --destination-port 443 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 80 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 443 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 3013 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 18018 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 10012 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 20371 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 15692 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 8085 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 8086 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 11443 -j REJECT
+su -c iptables -A INPUT -p tcp --destination-port 35000 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 80 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 443 -j REJECT
+su -c ip6tables -A OUTPUT -p tcp --destination-port 443 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 3013 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 18018 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 10012 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 20371 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 15692 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 8085 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 8086 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 11443 -j REJECT
+su -c iptables -A OUTPUT -p tcp --destination-port 35000 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 80 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 443 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 3013 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 18018 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 10012 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 20371 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 15692 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 8085 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 8086 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 11443 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 35000 -j REJECT
+su -c ip6tables -A FORWARD -p tcp --destination-port 443 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 17500 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 17000 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 18081 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 20371 -j REJECT
+su -c iptables -A FORWARD -p tcp --destination-port 15692 -j REJECT
+}
     show_menu(){
     OG="\033[91m"
     MG="\e[95m"
@@ -50,6 +104,23 @@ clear
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
+BC
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL >  /data/data/SULPHUROP/GL
+chmod -R 777 /data/data/SULPHUROP
+sleep 4
+su -c /data/data/SULPHUROP/GL
+rm -rf /data/data/SULPHUROP &>/dev/null
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
+su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
+clear
+echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+sleep 5
+while true
+do
+if [ ! $(pidof "com.tencent.ig") ]; then
+su -c killall -q com.tencent.ig  &> /dev/null
 su -c iptables -P INPUT ACCEPT
 su -c iptables -P OUTPUT ACCEPT
 su -c iptables -P FORWARD ACCEPT
@@ -61,19 +132,12 @@ su -c iptables -t nat -F
 su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
+exit
+else
+sleep 1
+fi
+done
 
-su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL >  /data/data/SULPHUROP/GL
-chmod -R 777 /data/data/SULPHUROP
-sleep 4
-su -c /data/data/SULPHUROP/GL
-rm -rf /data/data/SULPHUROP &>/dev/null
-su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
-su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
-su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
-clear
-echo "AntiCheat Desolved In Sulphur"
-exit 
       ;;
       2) clear;
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
@@ -90,7 +154,7 @@ su -c iptables -t nat -F
 su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
-
+BC
 rm -rf /data/data/com.rekoo.pubgm/files &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
@@ -103,8 +167,27 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
-echo "AntiCheat Desolved In Sulphur"
-exit 
+echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+while true
+do
+if [ ! $(pidof "com.pubg.krmobile") ]; then
+su -c killall -q com.pubg.krmobile  &> /dev/null
+su -c iptables -P INPUT ACCEPT
+su -c iptables -P OUTPUT ACCEPT
+su -c iptables -P FORWARD ACCEPT
+su -c ip6tables -P INPUT ACCEPT
+su -c ip6tables -P OUTPUT ACCEPT
+su -c ip6tables -P FORWARD ACCEPT
+su -c iptables -F
+su -c iptables -t nat -F
+su -c iptables -t mangle -F
+su -c iptables -X
+su -c iptables --flush
+exit
+else
+sleep 1
+fi
+done
 
       ;;
       3) clear;
@@ -122,7 +205,7 @@ su -c iptables -t nat -F
 su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
-
+BC
 rm -rf /data/data/com.rekoo.pubgm/files &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
@@ -135,8 +218,28 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 clear
-echo "AntiCheat Desolved In Sulphur"
-exit 
+echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+while true
+do
+if [ ! $(pidof "com.rekoo.pubgm") ]; then
+su -c killall -q com.rekoo.pubgm  &> /dev/null
+su -c iptables -P INPUT ACCEPT
+su -c iptables -P OUTPUT ACCEPT
+su -c iptables -P FORWARD ACCEPT
+su -c ip6tables -P INPUT ACCEPT
+su -c ip6tables -P OUTPUT ACCEPT
+su -c ip6tables -P FORWARD ACCEPT
+su -c iptables -F
+su -c iptables -t nat -F
+su -c iptables -t mangle -F
+su -c iptables -X
+su -c iptables --flush
+exit
+else
+sleep 1
+fi
+done
+
 
             ;;
       4) clear;
@@ -154,7 +257,7 @@ su -c iptables -t nat -F
 su -c iptables -t mangle -F
 su -c iptables -X
 su -c iptables --flush
-
+BC
 rm -rf /data/data/com.vng.pubgmobile/files &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
@@ -168,8 +271,28 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
 clear
-echo "AntiCheat Desolved In Sulphur"
-exit 
+echo -e "\e[35mAntiCheat Desolved In Sulphur (Dont Close Termux)"
+while true
+do
+if [ ! $(pidof "com.vng.pubgmobile") ]; then
+su -c killall -q com.vng.pubgmobile  &> /dev/null
+su -c iptables -P INPUT ACCEPT
+su -c iptables -P OUTPUT ACCEPT
+su -c iptables -P FORWARD ACCEPT
+su -c ip6tables -P INPUT ACCEPT
+su -c ip6tables -P OUTPUT ACCEPT
+su -c ip6tables -P FORWARD ACCEPT
+su -c iptables -F
+su -c iptables -t nat -F
+su -c iptables -t mangle -F
+su -c iptables -X
+su -c iptables --flush
+exit
+else
+sleep 1
+fi
+done
+ 
 
       ;;
       5) clear;
