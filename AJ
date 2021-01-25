@@ -62,10 +62,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 sleep 4
 rm -rf /storage/emulated/0/SULPHUR &>/dev/null
 mkdir /storage/emulated/0/SULPHUR
-mv /data/app/com.tencent.ig*/lib/arm*/libzip.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/libtprt.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/libtersafe.so /storage/emulated/0/SULPHUR &>/dev/null
+mv /data/app/com.tencent.ig*/lib/arm*/* /storage/emulated/0/SULPHUR &>/dev/null
 sleep 0.1
 mv /storage/emulated/0/SULPHUR/* /data/app/com.tencent.ig*/lib/arm* &>/dev/null
 chmod 755 /data/app/com.tencent.ig*/lib/arm*/*
@@ -91,10 +88,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 sleep 4
 rm -rf /storage/emulated/0/SULPHUR &>/dev/null
 mkdir /storage/emulated/0/SULPHUR
-mv /data/app/com.pubg.krmobile*/lib/arm*/libzip.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/libtprt.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so /storage/emulated/0/SULPHUR &>/dev/null
+mv /data/app/com.pubg.krmobile*/lib/arm*/* /storage/emulated/0/SULPHUR &>/dev/null
 sleep 0.1
 mv /storage/emulated/0/SULPHUR/* /data/app/com.pubg.krmobile*/lib/arm* &>/dev/null
 chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &>/dev/null
@@ -118,10 +112,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 sleep 4
 rm -rf /storage/emulated/0/SULPHUR &>/dev/null
 mkdir /storage/emulated/0/SULPHUR
-mv /data/app/com.rekoo.pubgm*/lib/arm*/libzip.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/libtprt.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so /storage/emulated/0/SULPHUR &>/dev/null
+mv /data/app/com.rekoo.pubgm*/lib/arm*/* /storage/emulated/0/SULPHUR &>/dev/null
 sleep 0.1
 mv /storage/emulated/0/SULPHUR/* /data/app/com.rekoo.pubgm*/lib/arm* &>/dev/null
 chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &>/dev/null
@@ -147,10 +138,7 @@ su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events
 sleep 4
 rm -rf /storage/emulated/0/SULPHUR &>/dev/null
 mkdir /storage/emulated/0/SULPHUR
-mv /data/app/com.vng.pubgmobile*/lib/arm*/libzip.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/libtprt.so /storage/emulated/0/SULPHUR &>/dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so /storage/emulated/0/SULPHUR &>/dev/null
+mv /data/app/com.vng.pubgmobile*/lib/arm*/* /storage/emulated/0/SULPHUR &>/dev/null
 sleep 0.1
 mv /storage/emulated/0/SULPHUR/* /data/app/com.vng.pubgmobile*/lib/arm* &>/dev/null
 chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &>/dev/null
@@ -217,4 +205,3 @@ function option_picked() {
 }
 
 clear
-show_menu
