@@ -59,7 +59,7 @@ sleep 30
 mv $DD/$PKG/lib/{libUE4.so,2} &> /dev/null
 rm -rf $DD/$PKG/lib/libtersafe.so &> /dev/null
 chmod -R 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
-sleep 50
+sleep 30
 rm -rf $DD/$PKG/lib/*
 while true
 do
@@ -96,7 +96,7 @@ sleep 30
 mv $DD/$PKG/lib/{libUE4.so,2} &> /dev/null
 rm -rf $DD/$PKG/lib/libtersafe.so &> /dev/null
 chmod -R 664 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
-sleep 50
+sleep 30
 rm -rf $DD/$PKG/lib/*
 while true
 do
@@ -132,7 +132,7 @@ sleep 30
 mv $DD/$PKG/lib/{libUE4.so,2} &> /dev/null
 rm -rf $DD/$PKG/lib/libtersafe.so &> /dev/null
 chmod -R 664 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
-sleep 50
+sleep 30
 rm -rf $DD/$PKG/lib/*
 while true
 do
@@ -169,7 +169,7 @@ sleep 30
 mv $DD/$PKG/lib/{libUE4.so,2} &> /dev/null
 rm -rf $DD/$PKG/lib/libtersafe.so &> /dev/null
 chmod -R 664 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
-sleep 50
+sleep 30
 rm -rf $DD/$PKG/lib/*
 while true
 do
