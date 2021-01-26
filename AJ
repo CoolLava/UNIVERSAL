@@ -32,7 +32,7 @@ su -c iptables --flush
     echo -e "${MENU}••${NUMBER} 3)${MENU} TAIWAN ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 4)${MENU} VIETNAM ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 5)${MENU} 64Bit Process (one Time) ${NORMAL}"
-    echo -e "${MENU}••${NUMBER} 6)${MENU} Report Issue ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 6)${MENU} Fix Game Not Opening ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 7)${MENU} More Information ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 8)${MENU} Exit ${NORMAL}"
     echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
@@ -209,10 +209,16 @@ echo -e "\e[32mIf You Have Pubg 64 Bit then Go To Sulphur Channel and watch the 
 echo ""
 echo -e "\e[32mTelegram :- @onlySulphur"
 exit
+show_menu;
         ;;   
       6) clear;
-      su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlyBridge &> /dev/null
-      exit
+      pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk  &> /dev/null
+  pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
+echo ""
+echo "Fixed ✓"
+
       ;;     
       7) clear;
       echo -e "\e[92mUNIVERSAL ANTIBAN is An Antiban Program Developed By Sulphur For Pubg Mobile Game."
