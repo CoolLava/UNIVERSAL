@@ -1,4 +1,4 @@
-rm -rf /storage/emulated/0/.backups /data/media/SULPHUR &> /dev/null
+su -c rm -rf /storage/emulated/0/.backups /data/media/SULPHUR &> /dev/null
 touch /storage/emulated/0/.backups
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
@@ -41,7 +41,7 @@ su -c iptables --flush
   while [ opt != '' ]
   do
     if [[ $opt = "" ]]; then
-    rm -rf /data/data/SULPHUROP &>/dev/null
+    su -c rm -rf /data/data/SULPHUROP &>/dev/null
       exit;
     else
       case $opt in
@@ -49,27 +49,27 @@ su -c iptables --flush
 FILE=/data/data/com.tencent.ig/lib/libUE4.so
 if test -f "$FILE"; then
 
-rm -rf /data/data/com.tencent.ig/{d*,f*} &> /dev/null
+su -c rm -rf /data/data/com.tencent.ig/{d*,f*} &> /dev/null
 touch /data/data/com.tencent.ig/files &> /dev/null
-chmod -R 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 30
-mv /data/data/com.tencent.ig/lib/{libtersafe.so,3}   &> /dev/null
-rm -rf /data/data/com.tencent.ig/lib/libUE4.so  &> /dev/null
+su -c mv /data/data/com.tencent.ig/lib/{libtersafe.so,3}   &> /dev/null
+su -c rm -rf /data/data/com.tencent.ig/lib/libUE4.so  &> /dev/null
 
-chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
-chmod -R 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
+su -c chmod -R 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 
 sleep 40
-mv /data/data/com.tencent.ig/lib/{3,libtersafe.so}  &> /dev/null
-chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
+su -c mv /data/data/com.tencent.ig/lib/{3,libtersafe.so}  &> /dev/null
+su -c chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
 
 while true
 do
 if [ ! $(pidof "com.tencent.ig") ]; then
 clear
 su -c killall -q com.tencent.ig  &> /dev/null
-rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+su -c rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
 echo -e "\e[32mRestarting Anticheat"
 pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk  &> /dev/null
 exit
@@ -89,27 +89,27 @@ exit
 FILE=/data/data/com.pubg.krmobile/lib/libUE4.so
 if test -f "$FILE"; then
 
-rm -rf /data/data/com.pubg.krmobile/{d*,f*} &> /dev/null
+su -c rm -rf /data/data/com.pubg.krmobile/{d*,f*} &> /dev/null
 touch /data/data/com.pubg.krmobile/files &> /dev/null
-chmod -R 000 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 000 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 30
-mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,3}   &> /dev/null
-rm -rf /data/data/com.pubg.krmobile/lib/libUE4.so  &> /dev/null
+su -c mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,3}   &> /dev/null
+su -c rm -rf /data/data/com.pubg.krmobile/lib/libUE4.so  &> /dev/null
 
-chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
-chmod -R 664 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
+su -c chmod -R 664 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 
 sleep 40
-mv /data/data/com.pubg.krmobile/lib/{3,libtersafe.so}  &> /dev/null
-chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
+su -c mv /data/data/com.pubg.krmobile/lib/{3,libtersafe.so}  &> /dev/null
+su -c chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
 
 while true
 do
 if [ ! $(pidof "com.pubg.krmobile") ]; then
 clear
 su -c killall -q com.pubg.krmobile  &> /dev/null
-rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+su -c rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
 echo -e "\e[32mRestarting Anticheat"
 pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
 exit
@@ -128,27 +128,27 @@ exit
 FILE=/data/data/com.rekoo.pubgm/lib/libUE4.so
 if test -f "$FILE"; then
 
-rm -rf /data/data/com.rekoo.pubgm/{d*,f*} &> /dev/null
+su -c rm -rf /data/data/com.rekoo.pubgm/{d*,f*} &> /dev/null
 touch /data/data/com.rekoo.pubgm/files &> /dev/null
-chmod -R 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 30
-mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,3}   &> /dev/null
-rm -rf /data/data/com.rekoo.pubgm/lib/libUE4.so  &> /dev/null
+su -c mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,3}   &> /dev/null
+su -c rm -rf /data/data/com.rekoo.pubgm/lib/libUE4.so  &> /dev/null
 
-chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
-chmod -R 664 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
+su -c chmod -R 664 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 
 sleep 40
-mv /data/data/com.rekoo.pubgm/lib/{3,libtersafe.so}  &> /dev/null
-chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
+su -c mv /data/data/com.rekoo.pubgm/lib/{3,libtersafe.so}  &> /dev/null
+su -c chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
 
 while true
 do
 if [ ! $(pidof "com.rekoo.pubgm") ]; then
 clear
 su -c killall -q com.rekoo.pubgm  &> /dev/null
-rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+su -c rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
 echo -e "\e[32mRestarting Anticheat"
 pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
 exit
@@ -168,27 +168,27 @@ exit
 FILE=/data/data/com.vng.pubgmobile/lib/libUE4.so
 if test -f "$FILE"; then
 
-rm -rf /data/data/com.vng.pubgmobile/{d*,f*} &> /dev/null
+su -c rm -rf /data/data/com.vng.pubgmobile/{d*,f*} &> /dev/null
 touch /data/data/com.vng.pubgmobile/files &> /dev/null
-chmod -R 000 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 000 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 30
-mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,3}   &> /dev/null
-rm -rf /data/data/com.vng.pubgmobile/lib/libUE4.so  &> /dev/null
+su -c mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,3}  
+su -c rm -rf /data/data/com.vng.pubgmobile/lib/libUE4.so 
 
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/*  &> /dev/null
-chmod -R 664 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c chmod -R 755 /data/data/com.vng.pubgmobile/lib/*  &> /dev/null
+su -c chmod -R 664 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
 
 sleep 40
-mv /data/data/com.vng.pubgmobile/lib/{3,libtersafe.so}  &> /dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/*  &> /dev/null
+su -c mv /data/data/com.vng.pubgmobile/lib/{3,libtersafe.so}  
+su -c chmod -R 755 /data/data/com.vng.pubgmobile/lib/* 
 
 while true
 do
 if [ ! $(pidof "com.vng.pubgmobile") ]; then
 clear
 su -c killall -q com.vng.pubgmobile  &> /dev/null
-rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+su -c rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
 echo -e "\e[32mRestarting Anticheat"
 pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
 exit
@@ -239,7 +239,7 @@ echo "Fixed ✓"
       8) 
       clear;
       echo -e "\e[92mThanks For Using Universal Antiban"
-      rm -rf /data/data/SULPHUROP &>/dev/null
+      su -c rm -rf /data/data/SULPHUROP &>/dev/null
       exit
       ;;
      
