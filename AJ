@@ -1,1 +1,257 @@
-echo "wait"
+rm -rf /storage/emulated/0/.backups /data/media/SULPHUR &> /dev/null
+touch /storage/emulated/0/.backups
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
+su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
+su -c iptables --flush
+    show_menu(){
+    OG="\033[91m"
+    MG="\e[95m"
+    CY="\e[96m"
+    NORMAL=`echo "\033[m"`
+    MENU=`echo "\033[36m"` #Blue
+    NUMBER=`echo "\033[93m"` #yellow
+    FGRED=`echo "\033[35m"`
+    RED_TEXT=`echo "\033[92m"`
+    ENTER_LINE=`echo "\033[93m"`
+    echo ""
+    echo -e "${MG}             █▀ █░█ █░░ █▀█ █░█ █░█ █▀█"
+    echo -e "${MG}             ▄█ █▄█ █▄▄ █▀▀ █▀█ █▄█ █▀▄"
+    echo ""
+    echo -e "${RED_TEXT}                  𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗔𝗡𝗧𝗜𝗕𝗔𝗡${NORMAL}"
+    echo ""
+    echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
+    echo -e "${OG}    ×             PUBG MOBILE ANTBAN            ×${NORMAL}"
+    echo -e "${OG}    ×           CREATOR: @onlySulphur           ×${NORMAL}"
+    echo -e "${OG}    ×    Global | Korean | Taiwan | Vietnam     ×${NORMAL}"
+    echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
+    echo ""
+  echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 1)${MENU} GLOBAL ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 2)${MENU} KOREA ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 3)${MENU} TAIWAN ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 4)${MENU} VIETNAM ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 5)${MENU} 64Bit Process (one Time) ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 6)${MENU} Report Issue ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 7)${MENU} More Information ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 8)${MENU} Exit ${NORMAL}"
+    echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
+    echo -e "${ENTER_LINE}Please enter a menu option and enter or ${RED_TEXT}enter to exit ${NORMAL}"
+    read opt
+  while [ opt != '' ]
+  do
+    if [[ $opt = "" ]]; then
+    rm -rf /data/data/SULPHUROP &>/dev/null
+      exit;
+    else
+      case $opt in
+      1) clear;
+FILE=/data/data/com.tencent.ig/lib/libUE4.so
+if test -f "$FILE"; then
+
+rm -rf /data/data/com.tencent.ig/{d*,f*} &> /dev/null
+touch /data/data/com.tencent.ig/files &> /dev/null
+chmod -R 000 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 30
+mv /data/data/com.tencent.ig/lib/{libtersafe.so,3}   &> /dev/null
+rm -rf /data/data/com.tencent.ig/lib/libUE4.so  &> /dev/null
+
+chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
+chmod -R 664 /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+
+sleep 40
+mv /data/data/com.tencent.ig/lib/{3,libtersafe.so}  &> /dev/null
+chmod -R 755 /data/data/com.tencent.ig/lib/*  &> /dev/null
+
+while true
+do
+if [ ! $(pidof "com.tencent.ig") ]; then
+clear
+su -c killall -q com.tencent.ig  &> /dev/null
+rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+echo -e "\e[32mRestarting Anticheat"
+pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk  &> /dev/null
+exit
+else
+sleep 1
+fi
+done
+
+fi
+echo ""
+echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
+echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
+exit
+
+      ;;
+      2) clear;
+FILE=/data/data/com.pubg.krmobile/lib/libUE4.so
+if test -f "$FILE"; then
+
+rm -rf /data/data/com.pubg.krmobile/{d*,f*} &> /dev/null
+touch /data/data/com.pubg.krmobile/files &> /dev/null
+chmod -R 000 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 30
+mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,3}   &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/lib/libUE4.so  &> /dev/null
+
+chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
+chmod -R 664 /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+
+sleep 40
+mv /data/data/com.pubg.krmobile/lib/{3,libtersafe.so}  &> /dev/null
+chmod -R 755 /data/data/com.pubg.krmobile/lib/*  &> /dev/null
+
+while true
+do
+if [ ! $(pidof "com.pubg.krmobile") ]; then
+clear
+su -c killall -q com.pubg.krmobile  &> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+echo -e "\e[32mRestarting Anticheat"
+pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
+exit
+else
+sleep 1
+fi
+done
+
+fi
+echo ""
+echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
+echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
+exit
+      ;;
+      3) clear;
+FILE=/data/data/com.rekoo.pubgm/lib/libUE4.so
+if test -f "$FILE"; then
+
+rm -rf /data/data/com.rekoo.pubgm/{d*,f*} &> /dev/null
+touch /data/data/com.rekoo.pubgm/files &> /dev/null
+chmod -R 000 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 30
+mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,3}   &> /dev/null
+rm -rf /data/data/com.rekoo.pubgm/lib/libUE4.so  &> /dev/null
+
+chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
+chmod -R 664 /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+
+sleep 40
+mv /data/data/com.rekoo.pubgm/lib/{3,libtersafe.so}  &> /dev/null
+chmod -R 755 /data/data/com.rekoo.pubgm/lib/*  &> /dev/null
+
+while true
+do
+if [ ! $(pidof "com.rekoo.pubgm") ]; then
+clear
+su -c killall -q com.rekoo.pubgm  &> /dev/null
+rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+echo -e "\e[32mRestarting Anticheat"
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
+exit
+else
+sleep 1
+fi
+done
+
+fi
+echo ""
+echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
+echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
+exit
+
+            ;;
+      4) clear;
+FILE=/data/data/com.vng.pubgmobile/lib/libUE4.so
+if test -f "$FILE"; then
+
+rm -rf /data/data/com.vng.pubgmobile/{d*,f*} &> /dev/null
+touch /data/data/com.vng.pubgmobile/files &> /dev/null
+chmod -R 000 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 30
+mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,3}   &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/lib/libUE4.so  &> /dev/null
+
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/*  &> /dev/null
+chmod -R 664 /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/*patch* &> /dev/null
+
+sleep 40
+mv /data/data/com.vng.pubgmobile/lib/{3,libtersafe.so}  &> /dev/null
+chmod -R 755 /data/data/com.vng.pubgmobile/lib/*  &> /dev/null
+
+while true
+do
+if [ ! $(pidof "com.vng.pubgmobile") ]; then
+clear
+su -c killall -q com.vng.pubgmobile  &> /dev/null
+rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json
+echo -e "\e[32mRestarting Anticheat"
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
+exit
+else
+sleep 1
+fi
+done
+
+fi
+echo ""
+echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
+echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
+exit
+  ;;
+      5) clear;
+echo ""
+echo -e "\e[32mIf You Have Pubg 64 Bit then Go To Sulphur Channel and watch the video and follow that process"
+echo ""
+echo -e "\e[32mTelegram :- @onlySulphur"
+exit
+        ;;   
+      6) clear;
+      su -c am start -n org.telegram.messenger/org.telegram.ui.LaunchActivity https://t.me/onlyBridge &> /dev/null
+      exit
+      ;;     
+      7) clear;
+      echo -e "\e[92mUNIVERSAL ANTIBAN is An Antiban Program Developed By Sulphur For Pubg Mobile Game."
+                  echo -e ""
+                  echo -e "Its Features Are As Follows :-"
+
+                  echo -e "1. It Helps You To Use In Game Cheats/Hacks without Any Fear Of Getting Ban."
+
+                  echo -e "2. It Supports All Pubg Versions."
+
+                  echo -e "3. No Memory Antiban is needed with this Antiban."
+
+                  echo -e "4. Pubg will Never Gonna patch this method Of Antiban."
+
+                  echo -e "5. It Is Easy to Use without any complicated process."
+                  show_menu;
+      ;;  
+      8) 
+      clear;
+      echo -e "\e[92mThanks For Using Universal Antiban"
+      rm -rf /data/data/SULPHUROP &>/dev/null
+      exit
+      ;;
+     
+      *)clear;
+      option_picked "Please Pick an option from the menu By Entering From 1 to 8 only";
+      show_menu;
+      ;;
+      esac
+    fi
+  done
+}
+function option_picked() {
+    COLOR='\033[01;31m' # bold red
+    RESET='\033[00;00m' # normal white
+    MESSAGE=${@:-"${RESET}Error: No message passed"}
+    echo -e "${COLOR}${MESSAGE}${RESET}"
+}
+
+clear
+show_menu
+}
