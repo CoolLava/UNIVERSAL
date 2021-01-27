@@ -52,7 +52,7 @@ if test -f "$FILE"; then
 
 rm -rf /data/data/com.tencent.ig/{d*,f*}  &> /dev/null
 touch /data/data/com.tencent.ig/files
-su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity   &> /dev/null
 sleep 20
 cp /data/data/com.tencent.ig/lib/libtersafe.so /storage/emulated/0/Adarsh  &> /dev/null
 mv /data/data/com.tencent.ig/lib/{libtersafe.so,1337}  &> /dev/null
@@ -92,7 +92,7 @@ if test -f "$FILE"; then
 
 rm -rf /data/data/com.pubg.krmobile/{d*,f*}  &> /dev/null
 touch /data/data/com.pubg.krmobile/files
-su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity   &> /dev/null
 sleep 20
 cp /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/Adarsh  &> /dev/null
 mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1337}  &> /dev/null
@@ -132,7 +132,7 @@ if test -f "$FILE"; then
 
 rm -rf /data/data/com.rekoo.pubgm/{d*,f*}  &> /dev/null
 touch /data/data/com.rekoo.pubgm/files
-su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity
+su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity   &> /dev/null
 sleep 20
 cp /data/data/com.rekoo.pubgm/lib/libtersafe.so /storage/emulated/0/Adarsh  &> /dev/null
 mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1337}  &> /dev/null
@@ -172,7 +172,7 @@ if test -f "$FILE"; then
 
 rm -rf /data/data/com.vng.pubgmobile/{d*,f*}  &> /dev/null
 touch /data/data/com.vng.pubgmobile/files
-su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
+su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity   &> /dev/null
 sleep 20
 cp /data/data/com.vng.pubgmobile/lib/libtersafe.so /storage/emulated/0/Adarsh  &> /dev/null
 mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1337}  &> /dev/null
