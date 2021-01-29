@@ -1,6 +1,5 @@
-su -c rm -rf /storage/emulated/0/.backups /storage/emulated/0/Adarsh /data/media/SULPHUR  &>/dev/null
+su -c rm -rf /storage/emulated/0/.backups /data/media/SULPHUR  &>/dev/null
 touch /storage/emulated/0/.backups &>/dev/null
-mkdir /storage/emulated/0/Adarsh   &>/dev/null
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
 su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
 su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
@@ -42,177 +41,153 @@ su -c iptables --flush
   while [ opt != '' ]
   do
     if [[ $opt = "" ]]; then
-    su -c rm -rf /data/data/SULPHUROP &>/dev/null
+    su -c rm -rf /data/data/Sulphur &>/dev/null
       exit;
     else
       case $opt in
       1) clear;
-FILE=/data/data/com.tencent.ig/lib/libUE4.so
-if test -f "$FILE"; then
 
-rm -rf /data/data/com.tencent.ig/{d*,f*}  &>/dev/null
+rm -rf /data/data/com.tencent.ig/f*  &>/dev/null
 touch /data/data/com.tencent.ig/files
 
 
-su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &>/dev/null
-sleep 7
-mv /data/data/com.tencent.ig/lib/{libUE4.so,1234} &>/dev/null
-touch /data/data/com.tencent.ig/lib/libUE4.so &>/dev/null
-cp /data/data/com.tencent.ig/lib/libtersafe.so /storage/emulated/0/Adarsh/ &>/dev/null
-mv /data/data/com.tencent.ig/lib/{libtersafe.so,12345} &>/dev/null
-mv /storage/emulated/0/Adarsh/*so /data/data/com.tencent.ig/lib/ &>/dev/null
-chmod -R 755 /data/data/com.tencent.ig/lib/* &>/dev/null
-sleep 60
-mv /data/data/com.tencent.ig/lib/{1234,libUE4.so} &>/dev/null
-rm -rf /data/data/com.tencent.ig/lib/libtersafe.so &>/dev/null
-mv /data/data/com.tencent.ig/lib/{12345,libtersafe.so} &>/dev/null
 
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity  &>/dev/null
+sleep 7
+
+
+
+chmod 000 /data/app/com.tencent.ig*/lib/arm*/libtersafe.so  &>/dev/null
+
+
+mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /storage/emulated/0/  &>/dev/null
+mv /storage/emulated/0/libUE4.so /data/app/com.tencent.ig*/lib/arm*/  &>/dev/null
+
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/*  &>/dev/null
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
 while true
 do
 if [ ! $(pidof "com.tencent.ig") ]; then
 clear
-su -c killall -q com.tencent.ig  
+su -c killall -q com.tencent.ig    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-echo -e "\e[32mRestarting Anticheat"
-pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk   &>/dev/null
-rm -rf /storage/emulated/0/Adarsh   &>/dev/null
+echo -e "\e[32mGame Closed Antiban Stopped"
+
 exit
 else
 sleep 1
 fi
 done
 
-fi
-echo ""
-echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
-echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
-exit
       ;;
       2) clear;
-FILE=/data/data/com.pubg.krmobile/lib/libUE4.so
-if test -f "$FILE"; then
 
-rm -rf /data/data/com.pubg.krmobile/{d*,f*}  &>/dev/null
+rm -rf /data/data/com.pubg.krmobile/f*  &>/dev/null
 touch /data/data/com.pubg.krmobile/files
 
 
-su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &>/dev/null
-sleep 7
-mv /data/data/com.pubg.krmobile/lib/{libUE4.so,1234} &>/dev/null
-touch /data/data/com.pubg.krmobile/lib/libUE4.so &>/dev/null
-cp /data/data/com.pubg.krmobile/lib/libtersafe.so /storage/emulated/0/Adarsh/ &>/dev/null
-mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,12345} &>/dev/null
-mv /storage/emulated/0/Adarsh/*so /data/data/com.pubg.krmobile/lib/ &>/dev/null
-chmod -R 755 /data/data/com.pubg.krmobile/lib/* &>/dev/null
-sleep 60
-mv /data/data/com.pubg.krmobile/lib/{1234,libUE4.so} &>/dev/null
-rm -rf /data/data/com.pubg.krmobile/lib/libtersafe.so &>/dev/null
-mv /data/data/com.pubg.krmobile/lib/{12345,libtersafe.so} &>/dev/null
 
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
+sleep 7
+
+
+
+chmod 000 /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so  &>/dev/null
+
+
+mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /storage/emulated/0/  &>/dev/null
+mv /storage/emulated/0/libUE4.so /data/app/com.pubg.krmobile*/lib/arm*/  &>/dev/null
+
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/*  &>/dev/null
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
 while true
 do
 if [ ! $(pidof "com.pubg.krmobile") ]; then
 clear
-su -c killall -q com.pubg.krmobile  
+su -c killall -q com.pubg.krmobile    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-echo -e "\e[32mRestarting Anticheat"
-pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk   &>/dev/null
-rm -rf /storage/emulated/0/Adarsh   &>/dev/null
+echo -e "\e[32mGame Closed Antiban Stopped"
+
 exit
 else
 sleep 1
 fi
 done
 
-fi
-echo ""
-echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
-echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
-exit
       ;;
       3) clear;
-FILE=/data/data/com.rekoo.pubgm/lib/libUE4.so
-if test -f "$FILE"; then
 
-rm -rf /data/data/com.rekoo.pubgm/{d*,f*}  &>/dev/null
+rm -rf /data/data/com.rekoo.pubgm/f*  &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 
 
-su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &>/dev/null
-sleep 7
-mv /data/data/com.rekoo.pubgm/lib/{libUE4.so,1234} &>/dev/null
-touch /data/data/com.rekoo.pubgm/lib/libUE4.so &>/dev/null
-cp /data/data/com.rekoo.pubgm/lib/libtersafe.so /storage/emulated/0/Adarsh/ &>/dev/null
-mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,12345} &>/dev/null
-mv /storage/emulated/0/Adarsh/*so /data/data/com.rekoo.pubgm/lib/ &>/dev/null
-chmod -R 755 /data/data/com.rekoo.pubgm/lib/* &>/dev/null
-sleep 60
-mv /data/data/com.rekoo.pubgm/lib/{1234,libUE4.so} &>/dev/null
-rm -rf /data/data/com.rekoo.pubgm/lib/libtersafe.so &>/dev/null
-mv /data/data/com.rekoo.pubgm/lib/{12345,libtersafe.so} &>/dev/null
 
+su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity  &>/dev/null
+sleep 7
+
+
+
+chmod 000 /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so  &>/dev/null
+
+
+mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /storage/emulated/0/  &>/dev/null
+mv /storage/emulated/0/libUE4.so /data/app/com.rekoo.pubgm*/lib/arm*/  &>/dev/null
+
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/*  &>/dev/null
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
 while true
 do
 if [ ! $(pidof "com.rekoo.pubgm") ]; then
 clear
-su -c killall -q com.rekoo.pubgm  
+su -c killall -q com.rekoo.pubgm    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-echo -e "\e[32mRestarting Anticheat"
-pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk   &>/dev/null
-rm -rf /storage/emulated/0/Adarsh   &>/dev/null
+echo -e "\e[32mGame Closed Antiban Stopped"
+
 exit
 else
 sleep 1
 fi
 done
 
-fi
-echo ""
-echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
-echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
-exit
             ;;
       4) clear;
-FILE=/data/data/com.vng.pubgmobile/lib/libUE4.so
-if test -f "$FILE"; then
 
-rm -rf /data/data/com.vng.pubgmobile/{d*,f*}  &>/dev/null
+rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 
 
-su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &>/dev/null
-sleep 7
-mv /data/data/com.vng.pubgmobile/lib/{libUE4.so,1234} &>/dev/null
-touch /data/data/com.vng.pubgmobile/lib/libUE4.so &>/dev/null
-cp /data/data/com.vng.pubgmobile/lib/libtersafe.so /storage/emulated/0/Adarsh/ &>/dev/null
-mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,12345} &>/dev/null
-mv /storage/emulated/0/Adarsh/*so /data/data/com.vng.pubgmobile/lib/ &>/dev/null
-chmod -R 755 /data/data/com.vng.pubgmobile/lib/* &>/dev/null
-sleep 60
-mv /data/data/com.vng.pubgmobile/lib/{1234,libUE4.so} &>/dev/null
-rm -rf /data/data/com.vng.pubgmobile/lib/libtersafe.so &>/dev/null
-mv /data/data/com.vng.pubgmobile/lib/{12345,libtersafe.so} &>/dev/null
 
+su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
+sleep 7
+
+
+
+chmod 000 /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so  &>/dev/null
+
+
+mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /storage/emulated/0/  &>/dev/null
+mv /storage/emulated/0/libUE4.so /data/app/com.vng.pubgmobile*/lib/arm*/  &>/dev/null
+
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/*  &>/dev/null
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
 while true
 do
 if [ ! $(pidof "com.vng.pubgmobile") ]; then
 clear
-su -c killall -q com.vng.pubgmobile  
+su -c killall -q com.vng.pubgmobile    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-echo -e "\e[32mRestarting Anticheat"
-pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk   &>/dev/null
-rm -rf /storage/emulated/0/Adarsh   &>/dev/null
+echo -e "\e[32mGame Closed Antiban Stopped"
+
 exit
 else
 sleep 1
 fi
 done
 
-fi
-echo ""
-echo -e "\e[35mYou Have Pubg Mobile 64 Bit Version Please follow"
-echo -e "\e[35msteps shown on channel before using Universal In 64Bit"
-exit
   ;;
       5) clear;
 echo ""
