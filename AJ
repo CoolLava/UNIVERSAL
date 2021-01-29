@@ -31,7 +31,7 @@ su -c iptables --flush
     echo -e "${MENU}••${NUMBER} 2)${MENU} KOREA ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 3)${MENU} TAIWAN ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 4)${MENU} VIETNAM ANTIBAN ${NORMAL}"
-    echo -e "${MENU}••${NUMBER} 5)${MENU} 64Bit Process (one Time) ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 5)${MENU} Telegram ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 6)${MENU} Fix Game Not Opening ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 7)${MENU} More Information ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 8)${MENU} Exit ${NORMAL}"
@@ -191,9 +191,7 @@ done
   ;;
       5) clear;
 echo ""
-echo -e "\e[32mIf You Have Pubg 64 Bit then Go To Sulphur Channel and watch the video and follow that process"
-echo ""
-echo -e "\e[32mTelegram :- @onlySulphur"
+echo -e "\e[31mTelegram - @onlySulphur / @UVantiban"
 exit
 show_menu;
         ;;   
