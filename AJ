@@ -55,31 +55,23 @@ DA=$(ls /data/app | grep com.tencent.ig)
 su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 7
 
-#32 Bit
-mv /data/data/com.tencent.ig/lib/{libtersafe.so,1} &> /dev/null
-mv /data/data/com.tencent.ig/lib/{libUE4.so,2} &> /dev/null
-touch /data/data/com.tencent.ig/lib/libtersafe.so &> /dev/null
-touch /data/data/com.tencent.ig/lib/libUE4.so &> /dev/null
+cp /data/app/com.tencent.ig*/lib/arm*/libtersafe.so /data/data/
 
-chmod 755 /data/data/com.tencent.ig/lib/* &> /dev/null
+mv /data/data/com.tencent.ig/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-
-#64Bit
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libUE4.so,2} &> /dev/null 
-touch /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
+mv /data/data/libtersafe.so /data/app/com.tencent.ig*/lib/arm*/
+mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /data/data/
+mv /data/data/libUE4.so /data/app/com.tencent.ig*/lib/arm*/
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/*
 
 sleep 70
-rm -rf /data/app/com.tencent.ig*/lib/arm*/{libtersafe.so,libUE4.so} &> /dev/null
+rm -rf /data/app/com.tencent.ig*/lib/arm*/libtersafe.so
 
-mv /data/data/com.tencent.ig/lib/{2,libUE4.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{2,libUE4.so} &> /dev/null
+mv /data/data/com.tencent.ig/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
 
-mv /data/data/com.tencent.ig/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
-chmod 755 /data/app/$DA/lib/arm*/* &> /dev/null
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/*
 
 
 echo ""
@@ -102,7 +94,6 @@ fi
 done
 
 
-
       ;;
       2) clear;
 rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
@@ -113,28 +104,23 @@ DA=$(ls /data/app | grep com.pubg.krmobile)
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 7
 
-#32 Bit
-mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1} &> /dev/null
-mv /data/data/com.pubg.krmobile/lib/libUE4.so /data/data/ &> /dev/null
-touch /data/data/com.pubg.krmobile/lib/libtersafe.so &> /dev/null
-touch /data/data/com.pubg.krmobile/lib/libUE4.so &> /dev/null
+cp /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so /data/data/
 
-chmod 755 /data/data/com.pubg.krmobile/lib/* &> /dev/null
+mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-
-#64Bit
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/libUE4.so /data/data/ &> /dev/null 
-touch /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
+mv /data/data/libtersafe.so /data/app/com.pubg.krmobile*/lib/arm*/
+mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /data/data/
+mv /data/data/libUE4.so /data/app/com.pubg.krmobile*/lib/arm*/
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/*
 
 sleep 70
-rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{libtersafe.so,libUE4.so} &> /dev/null
-mv /data/data/libUE4.so /data/app/com.pubg.krmobile/lib/arm*/ &> /dev/null
-mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
-chmod 755 /data/app/$DA/lib/arm*/* &> /dev/null
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so
+
+mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
+
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/*
 
 
 echo ""
@@ -166,28 +152,23 @@ DA=$(ls /data/app | grep com.rekoo.pubgm)
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 7
 
-#32 Bit
-mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1} &> /dev/null
-mv /data/data/com.rekoo.pubgm/lib/libUE4.so /data/data/ &> /dev/null
-touch /data/data/com.rekoo.pubgm/lib/libtersafe.so &> /dev/null
-touch /data/data/com.rekoo.pubgm/lib/libUE4.so &> /dev/null
+cp /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so /data/data/
 
-chmod 755 /data/data/com.rekoo.pubgm/lib/* &> /dev/null
+mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-
-#64Bit
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/libUE4.so /data/data/ &> /dev/null 
-touch /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
+mv /data/data/libtersafe.so /data/app/com.rekoo.pubgm*/lib/arm*/
+mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /data/data/
+mv /data/data/libUE4.so /data/app/com.rekoo.pubgm*/lib/arm*/
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/*
 
 sleep 70
-rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{libtersafe.so,libUE4.so} &> /dev/null
-mv /data/data/libUE4.so /data/app/com.rekoo.pubgm/lib/arm*/ &> /dev/null
-mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
-chmod 755 /data/app/$DA/lib/arm*/* &> /dev/null
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so
+
+mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
+
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/*
 
 
 echo ""
@@ -209,7 +190,6 @@ sleep 1
 fi
 done
 
-
             ;;
       4) clear;
 rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
@@ -220,28 +200,23 @@ DA=$(ls /data/app | grep com.vng.pubgmobile)
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
 sleep 7
 
-#32 Bit
-mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1} &> /dev/null
-mv /data/data/com.vng.pubgmobile/lib/libUE4.so /data/data/ &> /dev/null
-touch /data/data/com.vng.pubgmobile/lib/libtersafe.so &> /dev/null
-touch /data/data/com.vng.pubgmobile/lib/libUE4.so &> /dev/null
+cp /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so /data/data/
 
-chmod 755 /data/data/com.vng.pubgmobile/lib/* &> /dev/null
+mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-
-#64Bit
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/libUE4.so /data/data/ &> /dev/null 
-touch /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
+mv /data/data/libtersafe.so /data/app/com.vng.pubgmobile*/lib/arm*/
+mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /data/data/
+mv /data/data/libUE4.so /data/app/com.vng.pubgmobile*/lib/arm*/
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/*
 
 sleep 70
-rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{libtersafe.so,libUE4.so} &> /dev/null
-mv /data/data/libUE4.so /data/app/com.vng.pubgmobile/lib/arm*/ &> /dev/null
-mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
-chmod 755 /data/app/$DA/lib/arm*/* &> /dev/null
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so
+
+mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
+
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/*
 
 
 echo ""
@@ -262,7 +237,6 @@ else
 sleep 1
 fi
 done
-
 
   ;;
       5) clear;
