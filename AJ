@@ -1,1 +1,298 @@
-echo " Break Of Antiban"
+su -c rm -rf /storage/emulated/0/.backups /data/media/SULPHUR /data/data/Adarsh &>/dev/null
+touch /storage/emulated/0/.backups &>/dev/null
+su -c mkdir /data/data/Adarsh &>/dev/null
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_instances
+su -c echo "8192" > /proc/sys/fs/inotify/max_user_watches
+su -c echo "8192" > /proc/sys/fs/inotify/max_queued_events  
+su -c iptables --flush
+    show_menu(){
+    OG="\033[91m"
+    MG="\e[95m"
+    CY="\e[96m"
+    NORMAL=`echo "\033[m"`
+    MENU=`echo "\033[36m"` #Blue
+    NUMBER=`echo "\033[93m"` #yellow
+    FGRED=`echo "\033[35m"`
+    RED_TEXT=`echo "\033[92m"`
+    ENTER_LINE=`echo "\033[93m"`
+    echo ""
+    echo -e "${MG}             █▀ █░█ █░░ █▀█ █░█ █░█ █▀█"
+    echo -e "${MG}             ▄█ █▄█ █▄▄ █▀▀ █▀█ █▄█ █▀▄"
+    echo ""
+    echo -e "${RED_TEXT}                  𝗨𝗡𝗜𝗩𝗘𝗥𝗦𝗔𝗟 𝗔𝗡𝗧𝗜𝗕𝗔𝗡${NORMAL}"
+    echo ""
+    echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
+    echo -e "${OG}    ×             PUBG MOBILE ANTBAN            ×${NORMAL}"
+    echo -e "${OG}    ×           CREATOR: @onlySulphur           ×${NORMAL}"
+    echo -e "${OG}    ×    Global | Korean | Taiwan | Vietnam     ×${NORMAL}"
+    echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
+    echo ""
+  echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 1)${MENU} GLOBAL ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 2)${MENU} KOREA ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 3)${MENU} TAIWAN ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 4)${MENU} VIETNAM ANTIBAN ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 5)${MENU} Telegram ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 6)${MENU} Do and Dont's ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 7)${MENU} More Information ${NORMAL}"
+    echo -e "${MENU}••${NUMBER} 8)${MENU} Exit ${NORMAL}"
+    echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
+    echo -e "${ENTER_LINE}Please enter a menu option and enter or ${RED_TEXT}enter to exit ${NORMAL}"
+    read opt
+  while [ opt != '' ]
+  do
+    if [[ $opt = "" ]]; then
+    su -c rm -rf /data/data/Adarsh &>/dev/null
+      exit;
+    else
+      case $opt in
+      1) clear;
+rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/data/com.tencent.ig/f*  &>/dev/null
+touch /data/data/com.tencent.ig/files
+
+DA=$(ls /data/app | grep com.tencent.ig)
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 7
+
+cp /data/app/com.tencent.ig*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+
+mv /data/data/com.tencent.ig/lib/{libtersafe.so,1} &> /dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+
+mv /data/data/libtersafe.so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
+mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /data/data/ &> /dev/null
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
+
+sleep 70
+rm -rf /data/app/com.tencent.ig*/lib/arm*/libtersafe.so &> /dev/null
+
+mv /data/data/com.tencent.ig/lib/{1,libtersafe.so} &> /dev/null
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+rm -rf /data/data/libUE4.so
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
+
+
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
+
+while true
+do
+if [ ! $(pidof "com.tencent.ig") ]; then
+clear
+su -c killall -q com.tencent.ig    &>/dev/null
+su -c rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
+pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk  &> /dev/null
+
+echo -e "\e[32mGame Closed Antiban Stopped"
+
+exit
+else
+sleep 1
+fi
+done
+
+
+      ;;
+      2) clear;
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/data/com.pubg.krmobile/f*  &>/dev/null
+touch /data/data/com.pubg.krmobile/files
+
+DA=$(ls /data/app | grep com.pubg.krmobile)
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 7
+
+cp /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+
+mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1} &> /dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+
+mv /data/data/libtersafe.so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
+mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /data/data/ &> /dev/null
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
+
+sleep 70
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so &> /dev/null
+
+mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so} &> /dev/null
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+rm -rf /data/data/libUE4.so
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
+
+
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
+
+while true
+do
+if [ ! $(pidof "com.pubg.krmobile") ]; then
+clear
+su -c killall -q com.pubg.krmobile    &>/dev/null
+su -c rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
+pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
+
+echo -e "\e[32mGame Closed Antiban Stopped"
+
+exit
+else
+sleep 1
+fi
+done
+
+      ;;
+      3) clear;
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/data/com.rekoo.pubgm/f*  &>/dev/null
+touch /data/data/com.rekoo.pubgm/files
+
+DA=$(ls /data/app | grep com.rekoo.pubgm)
+su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 7
+
+cp /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+
+mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1} &> /dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+
+mv /data/data/libtersafe.so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
+mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /data/data/ &> /dev/null
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
+
+sleep 70
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so &> /dev/null
+
+mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so} &> /dev/null
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+rm -rf /data/data/libUE4.so
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
+
+
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
+
+while true
+do
+if [ ! $(pidof "com.rekoo.pubgm") ]; then
+clear
+su -c killall -q com.rekoo.pubgm    &>/dev/null
+su -c rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
+
+echo -e "\e[32mGame Closed Antiban Stopped"
+
+exit
+else
+sleep 1
+fi
+done
+
+            ;;
+      4) clear;
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
+touch /data/data/com.vng.pubgmobile/files
+
+DA=$(ls /data/app | grep com.vng.pubgmobile)
+su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+sleep 7
+
+cp /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+
+mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1} &> /dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+
+mv /data/data/libtersafe.so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
+mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /data/data/
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
+
+sleep 70
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so &> /dev/null
+
+mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so} &> /dev/null
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+rm -rf /data/data/libUE4.so
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
+
+
+echo ""
+echo -e "\e[35m Anticheat Dissolved In Sulphuric Acid"
+
+while true
+do
+if [ ! $(pidof "com.vng.pubgmobile") ]; then
+clear
+su -c killall -q com.vng.pubgmobile    &>/dev/null
+su -c rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
+
+echo -e "\e[32mGame Closed Antiban Stopped"
+
+exit
+else
+sleep 1
+fi
+done
+
+  ;;
+      5) clear;
+echo ""
+echo -e "\e[31mTelegram - @onlySulphur / @UVantiban"
+exit
+show_menu;
+        ;;   
+      6) clear;
+      echo -e "\e[33mWhat You can do -->"
+      echo ""
+      echo -e "\e[95m1. You Can Use Any Game Guardian Hacks."
+      echo -e "\e[95m2. You Can Use Any ESP."
+      echo -e "\e[95m3. You Can Use Any Injector."
+      echo ""
+      echo -e "\e[33mWhat You Cant Do -->"
+      echo ""
+      echo -e "\e[96m1. Dont minimize Game after opening Untill You Reach Lobby."
+      echo -e "\e[96m2. Dont Use Any Memory Antiban Host or other things with Universal."
+      echo -e "\e[96m3. Dont Use Main Id Before Testing On Guest.${NORMAL}"
+      exit
+      ;;     
+      7) clear;
+      echo -e "\e[92mUNIVERSAL ANTIBAN is An Antiban Program Developed By Sulphur For Pubg Mobile Game."
+                  echo -e ""
+                  echo -e "Its Features Are As Follows :-"
+
+                  echo -e "1. It Helps You To Use In Game Cheats/Hacks without Any Fear Of Getting Ban."
+
+                  echo -e "2. It Supports All Pubg Versions."
+
+                  echo -e "3. No Memory Antiban is needed with this Antiban."
+
+                  echo -e "4. Pubg will Never Gonna patch this method Of Antiban."
+
+                  echo -e "5. It Is Easy to Use without any complicated process."
+                  show_menu;
+      ;;  
+      8) 
+      clear;
+      echo -e "\e[92mThanks For Using Universal Antiban"
+      su -c rm -rf /data/data/SULPHUROP &>/dev/null
+      exit
+      ;;
+     
+      *)clear;
+      option_picked "Please Pick an option from the menu By Entering From 1 to 8 only";
+      show_menu;
+      ;;
+      esac
+    fi
+  done
+}
+function option_picked() {
+    COLOR='\033[01;31m' # bold red
+    RESET='\033[00;00m' # normal white
+    MESSAGE=${@:-"${RESET}Error: No message passed"}
+    echo -e "${COLOR}${MESSAGE}${RESET}"
+}
+
+clear
+show_menu
+}
