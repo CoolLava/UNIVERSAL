@@ -62,7 +62,6 @@ mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
 
 mv /data/data/libtersafe.so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
 mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-mv /data/data/libUE4.so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
 chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
 
 sleep 70
@@ -70,6 +69,7 @@ rm -rf /data/app/com.tencent.ig*/lib/arm*/libtersafe.so &> /dev/null
 
 mv /data/data/com.tencent.ig/lib/{1,libtersafe.so} &> /dev/null
 mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/libUE4.so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
 
 chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
 
@@ -111,7 +111,6 @@ mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
 
 mv /data/data/libtersafe.so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
 mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-mv /data/data/libUE4.so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
 chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
 
 sleep 70
@@ -119,6 +118,7 @@ rm -rf /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so &> /dev/null
 
 mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so} &> /dev/null
 mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/libUE4.so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
 
 chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
 
@@ -159,7 +159,6 @@ mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
 
 mv /data/data/libtersafe.so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
 mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-mv /data/data/libUE4.so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
 chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
 
 sleep 70
@@ -167,6 +166,7 @@ rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so &> /dev/null
 
 mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so} &> /dev/null
 mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/libUE4.so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
 
 chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
 
@@ -206,8 +206,7 @@ mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1} &> /dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
 
 mv /data/data/libtersafe.so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-mv /data/data/libUE4.so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
+mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /data/data/
 chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
 
 sleep 70
@@ -215,6 +214,7 @@ rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so &> /dev/null
 
 mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so} &> /dev/null
 mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/libUE4.so /data/app/com.vng.pubgmobile*/lib/arm*/
 
 chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
 
