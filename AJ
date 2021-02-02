@@ -47,33 +47,34 @@ su -c iptables --flush
     else
       case $opt in
       1) clear;
-rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*}
 rm -rf /data/data/com.tencent.ig/f*  &>/dev/null
 touch /data/data/com.tencent.ig/files
 
 DA=$(ls /data/app | grep com.tencent.ig)
-su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity
 sleep 7
 
-cp /data/app/com.tencent.ig*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
 
-mv /data/data/com.tencent.ig/lib/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+mv /data/data/com.tencent.ig/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-mv /data/data/libtersafe.so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
+touch /data/data/com.tencent.ig/lib/libtersafe.so
+touch /data/app/$DA/lib/arm64/libtersafe.so
 
-touch /data/data/com.tencent.ig/lib/libUE4.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
+mv /data/app/com.tencent.ig*/lib/arm*/libUE4.so /data/data/
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/*
+
+touch /data/data/com.tencent.ig/lib/libUE4.so
+touch /data/app/$DA/lib/arm64/libUE4.so
 
 sleep 70
-rm -rf /data/app/com.tencent.ig*/lib/arm*/libtersafe.so &> /dev/null
+rm -rf /data/app/com.tencent.ig*/lib/arm*/libtersafe.so
 
-mv /data/data/com.tencent.ig/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/com.tencent.ig/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
 rm -rf /data/data/libUE4.so
-chmod 755 /data/app/com.tencent.ig*/lib/arm*/* &> /dev/null
+chmod 755 /data/app/com.tencent.ig*/lib/arm*/*
 
 
 echo ""
@@ -85,7 +86,7 @@ if [ ! $(pidof "com.tencent.ig") ]; then
 clear
 su -c killall -q com.tencent.ig    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk  &> /dev/null
+pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.tencent.ig*/base.apk 
 
 echo -e "\e[32mGame Closed Antiban Stopped"
 
@@ -98,32 +99,32 @@ done
 
       ;;
       2) clear;
-rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*}
 rm -rf /data/data/com.pubg.krmobile/f*  &>/dev/null
 touch /data/data/com.pubg.krmobile/files
 
 DA=$(ls /data/app | grep com.pubg.krmobile)
-su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity
 sleep 7
 
-cp /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-mv /data/data/com.pubg.krmobile/lib/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+touch /data/data/com.pubg.krmobile/lib/libtersafe.so
+touch /data/app/$DA/lib/arm64/libtersafe.so
 
-mv /data/data/libtersafe.so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
-touch /data/data/com.pubg.krmobile/lib/libUE4.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
+mv /data/app/com.pubg.krmobile*/lib/arm*/libUE4.so /data/data/
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/*
+touch /data/data/com.pubg.krmobile/lib/libUE4.so
+touch /data/app/$DA/lib/arm64/libUE4.so
 
 sleep 70
-rm -rf /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so &> /dev/null
+rm -rf /data/app/com.pubg.krmobile*/lib/arm*/libtersafe.so
 
-mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/com.pubg.krmobile/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
 rm -rf /data/data/libUE4.so
-chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/* &> /dev/null
+chmod 755 /data/app/com.pubg.krmobile*/lib/arm*/*
 
 
 echo ""
@@ -135,7 +136,7 @@ if [ ! $(pidof "com.pubg.krmobile") ]; then
 clear
 su -c killall -q com.pubg.krmobile    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
+pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk 
 
 echo -e "\e[32mGame Closed Antiban Stopped"
 
@@ -147,32 +148,32 @@ done
 
       ;;
       3) clear;
-rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*}
 rm -rf /data/data/com.rekoo.pubgm/f*  &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 
 DA=$(ls /data/app | grep com.rekoo.pubgm)
-su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
+su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity
 sleep 7
 
-cp /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
+mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-mv /data/data/com.rekoo.pubgm/lib/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+touch /data/data/com.rekoo.pubgm/lib/libtersafe.so
+touch /data/app/$DA/lib/arm64/libtersafe.so
 
-mv /data/data/libtersafe.so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /data/data/ &> /dev/null
-chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
-touch /data/data/com.rekoo.pubgm/lib/libUE4.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
+mv /data/app/com.rekoo.pubgm*/lib/arm*/libUE4.so /data/data/
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/*
+touch /data/data/com.rekoo.pubgm/lib/libUE4.so
+touch /data/app/$DA/lib/arm64/libUE4.so
 
 sleep 70
-rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so &> /dev/null
+rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/libtersafe.so
 
-mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/com.rekoo.pubgm/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
 rm -rf /data/data/libUE4.so
-chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/* &> /dev/null
+chmod 755 /data/app/com.rekoo.pubgm*/lib/arm*/*
 
 
 echo ""
@@ -184,7 +185,7 @@ if [ ! $(pidof "com.rekoo.pubgm") ]; then
 clear
 su -c killall -q com.rekoo.pubgm    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk 
 
 echo -e "\e[32mGame Closed Antiban Stopped"
 
@@ -196,32 +197,33 @@ done
 
             ;;
       4) clear;
-rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*}
 rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 
 DA=$(ls /data/app | grep com.vng.pubgmobile)
-su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity
 sleep 7
 
-cp /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so /data/data/ &> /dev/null
 
-mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtersafe.so,1} &> /dev/null
+mv /data/data/com.vng.pubgmobile/lib/{libtersafe.so,1}
+mv /data/app/$DA/lib/arm64/{libtersafe.so,1}
 
-mv /data/data/libtersafe.so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
+touch /data/data/com.vng.pubgmobile/lib/libtersafe.so
+touch /data/app/$DA/lib/arm64/libtersafe.so
+
 mv /data/app/com.vng.pubgmobile*/lib/arm*/libUE4.so /data/data/
-chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
-touch /data/data/com.vng.pubgmobile/lib/libUE4.so &> /dev/null
-touch /data/app/$DA/lib/arm64/libUE4.so &> /dev/null
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/*
+touch /data/data/com.vng.pubgmobile/lib/libUE4.so
+touch /data/app/$DA/lib/arm64/libUE4.so
 
 sleep 70
-rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so &> /dev/null
+rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/libtersafe.so
 
-mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so} &> /dev/null
-mv /data/app/$DA/lib/arm64/{1,libtersafe.so} &> /dev/null
+mv /data/data/com.vng.pubgmobile/lib/{1,libtersafe.so}
+mv /data/app/$DA/lib/arm64/{1,libtersafe.so}
 rm -rf /data/data/libUE4.so
-chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/* &> /dev/null
+chmod 755 /data/app/com.vng.pubgmobile*/lib/arm*/*
 
 
 echo ""
@@ -233,7 +235,7 @@ if [ ! $(pidof "com.vng.pubgmobile") ]; then
 clear
 su -c killall -q com.vng.pubgmobile    &>/dev/null
 su -c rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &>/dev/null
-pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk 
 
 echo -e "\e[32mGame Closed Antiban Stopped"
 
