@@ -162,8 +162,9 @@ done
             ;;
       4) clear;
 echo -e "\e[33m Make Sure You Are At Tencent Logo"
-rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 DA=$(ls /data/app | grep com.vng.pubgmobile)
+rm -rf /data/app/$DA/lib/arm*/libgcloud.so
+
 rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 
