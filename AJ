@@ -48,12 +48,13 @@ su -c iptables --flush
     else
       case $opt in
       1) clear;
-DA=$(ls /data/app | grep com.tencent.ig)
-rm -rf /data/data/com.tencent.ig/f*  &>/dev/null
-touch /data/data/com.tencent.ig/files
+DA=$(ls /data/app | grep com.tencent ig)
+rm -rf /data/data/com.tencent ig/f*  &>/dev/null
+touch /data/data/com.tencent ig/files
 
-su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity  &>/dev/null
+su -c am start -n com.tencent ig/com.epicgames.ue4.SplashActivity  &>/dev/null
 sleep 7
+rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &>/dev/null
@@ -66,7 +67,21 @@ chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
 rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &>/dev/null
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
+
+while true
+do
+if [ ! $(pidof "com.tencent ig") ]; then
+su -c killall -q com.tencent ig  &> /dev/null
+pm install -r /data/app/com.tencent ig*/base.apk /data/app/com.tencent ig*/base.apk  &> /dev/null
+rm -rf /data/media/0/Android/data/com.tencent ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &> /dev/null
+clear
+echo ""
+echo -e "\e[35mAntiban Closed "
 exit
+else
+sleep 1
+fi
+done
       ;;
       2) clear;
 DA=$(ls /data/app | grep com.pubg.krmobile)
@@ -75,6 +90,7 @@ touch /data/data/com.pubg.krmobile/files
 
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
 sleep 7
+rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &>/dev/null
@@ -87,7 +103,21 @@ chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
 rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &>/dev/null
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
+
+while true
+do
+if [ ! $(pidof "com.pubg.krmobile") ]; then
+su -c killall -q com.pubg.krmobile  &> /dev/null
+pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.pubg.krmobile*/base.apk  &> /dev/null
+rm -rf /data/media/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &> /dev/null
+clear
+echo ""
+echo -e "\e[35mAntiban Closed "
 exit
+else
+sleep 1
+fi
+done
       ;;
       3) clear;
 DA=$(ls /data/app | grep com.rekoo.pubgm)
@@ -96,6 +126,7 @@ touch /data/data/com.rekoo.pubgm/files
 
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity  &>/dev/null
 sleep 7
+rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &>/dev/null
@@ -108,7 +139,21 @@ chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
 rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &>/dev/null
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
+
+while true
+do
+if [ ! $(pidof "com.rekoo.pubgm") ]; then
+su -c killall -q com.rekoo.pubgm  &> /dev/null
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.rekoo.pubgm*/base.apk  &> /dev/null
+rm -rf /data/media/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &> /dev/null
+clear
+echo ""
+echo -e "\e[35mAntiban Closed "
 exit
+else
+sleep 1
+fi
+done
             ;;
       4) clear;
 DA=$(ls /data/app | grep com.vng.pubgmobile)
@@ -117,6 +162,7 @@ touch /data/data/com.vng.pubgmobile/files
 
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
 sleep 7
+rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &>/dev/null
@@ -129,7 +175,21 @@ chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
 rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &>/dev/null
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
+
+while true
+do
+if [ ! $(pidof "com.vng.pubgmobile") ]; then
+su -c killall -q com.vng.pubgmobile  &> /dev/null
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  &> /dev/null
+rm -rf /data/media/0/Android/data/com.vng.pubgmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json  &> /dev/null
+clear
+echo ""
+echo -e "\e[35mAntiban Closed "
 exit
+else
+sleep 1
+fi
+done
   ;;
       5) clear;
 echo ""
