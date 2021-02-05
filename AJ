@@ -53,7 +53,7 @@ rm -rf /data/data/com.tencent ig/f*  &>/dev/null
 touch /data/data/com.tencent ig/files
 
 su -c am start -n com.tencent ig/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 7
+sleep 5
 rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
@@ -89,7 +89,7 @@ rm -rf /data/data/com.pubg.krmobile/f*  &>/dev/null
 touch /data/data/com.pubg.krmobile/files
 
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 7
+sleep 5
 rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
@@ -125,7 +125,7 @@ rm -rf /data/data/com.rekoo.pubgm/f*  &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 7
+sleep 5
 rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
@@ -161,7 +161,7 @@ rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 7
+sleep 5
 rm -rf /data/app/$DA/lib/arm*/libgcloud.so
 cp /data/app/$DA/lib/arm*/{libUE4.so,libtersafe.so} /data/data/  &>/dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
