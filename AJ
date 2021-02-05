@@ -53,7 +53,7 @@ rm -rf /data/data/com.tencent.ig/f*  &>/dev/null
 touch /data/data/com.tencent.ig/files
 
 su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 5
+sleep 7
 cp /data/app/$DA/lib/arm*/{libtersafe.so,libUE4.so} /storage/emulated/0/Android  &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &> /dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &> /dev/null
@@ -68,7 +68,7 @@ rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &> /dev/null
 
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
-sleep 5
+sleep 7
 while true
 do
 if [ ! $(pidof "com.tencent.ig") ]; then
@@ -90,7 +90,7 @@ rm -rf /data/data/com.pubg.krmobile/f*  &>/dev/null
 touch /data/data/com.pubg.krmobile/files
 
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 5
+sleep 7
 cp /data/app/$DA/lib/arm*/{libtersafe.so,libUE4.so} /storage/emulated/0/Android  &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &> /dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &> /dev/null
@@ -105,7 +105,7 @@ rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &> /dev/null
 
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
-sleep 5
+sleep 7
 while true
 do
 if [ ! $(pidof "com.pubg.krmobile") ]; then
@@ -127,7 +127,7 @@ rm -rf /data/data/com.rekoo.pubgm/f*  &>/dev/null
 touch /data/data/com.rekoo.pubgm/files
 
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 5
+sleep 7
 cp /data/app/$DA/lib/arm*/{libtersafe.so,libUE4.so} /storage/emulated/0/Android  &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &> /dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &> /dev/null
@@ -142,7 +142,7 @@ rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &> /dev/null
 
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
-sleep 5
+sleep 7
 while true
 do
 if [ ! $(pidof "com.rekoo.pubgm") ]; then
@@ -164,7 +164,7 @@ rm -rf /data/data/com.vng.pubgmobile/f*  &>/dev/null
 touch /data/data/com.vng.pubgmobile/files
 
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity  &>/dev/null
-sleep 5
+sleep 7
 cp /data/app/$DA/lib/arm*/{libtersafe.so,libUE4.so} /storage/emulated/0/Android  &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &> /dev/null
 mv /data/app/$DA/lib/arm/{libUE4.so,libUE4.s}  &> /dev/null
@@ -179,7 +179,7 @@ rm -rf /data/app/$DA/lib/arm*/libtersafe.s  &> /dev/null
 
 echo ""
 echo -e "\e[33mANTICHEAT DISOLVED IN SULPHURIC ACID YOU CAN USE CHEATS"
-sleep 5
+sleep 7
 while true
 do
 if [ ! $(pidof "com.vng.pubgmobile") ]; then
