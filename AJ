@@ -65,6 +65,14 @@ rm -rf /data/data/Sulphur &> /dev/null
 mv /data/app/com.tencent.ig*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
 mv /storage/emulated/0/Android/*so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.tencent.ig*/lib/arm* &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/GL &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/GL &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/GL &> /dev/null
+sleep 2
+su -c /data/data/Sulphur/GL &> /dev/null
 done
 sleep 10
 while true
@@ -97,6 +105,14 @@ rm -rf /data/data/Sulphur &> /dev/null
 mv /data/app/com.pubg.krmobile*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
 mv /storage/emulated/0/Android/*so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.pubg.krmobile*/lib/arm* &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/KR &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/KR &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/KR &> /dev/null
+sleep 2
+su -c /data/data/Sulphur/KR &> /dev/null
 done
 sleep 10
 while true
@@ -130,6 +146,15 @@ mv /data/app/com.rekoo.pubgm*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/
 mv /storage/emulated/0/Android/*so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.rekoo.pubgm*/lib/arm* &> /dev/null
 done
+sleep 1
+su -c /data/data/Sulphur/TW &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/TW &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/TW &> /dev/null
+sleep 2
+su -c /data/data/Sulphur/TW &> /dev/null
+
 sleep 10
 while true
 do
@@ -162,6 +187,14 @@ mv /data/app/com.vng.pubgmobile*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulat
 mv /storage/emulated/0/Android/*so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
 chmod -R 755 /data/app/com.vng.pubgmobile*/lib/arm* &> /dev/null
 done
+sleep 1
+su -c /data/data/Sulphur/VN &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/VN &> /dev/null
+sleep 1
+su -c /data/data/Sulphur/VN &> /dev/null
+sleep 2
+su -c /data/data/Sulphur/VN &> /dev/null
 sleep 10
 while true
 do
