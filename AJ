@@ -53,14 +53,14 @@ su -c iptables --flush
 GAME="com.tencent.ig"
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/VN > /data/data/Sulphur/VN
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL > /data/data/Sulphur/VN
 chmod -R 777 /data/data/Sulphur &> /dev/null
 clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
 sleep 5
-su -c /data/data/Sulphur/VN &> /dev/null
+su -c /data/data/Sulphur/GL &> /dev/null
 rm -rf /data/data/Sulphur &> /dev/null
 mv /data/app/com.tencent.ig*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
 mv /storage/emulated/0/Android/*so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
@@ -85,14 +85,14 @@ done
 GAME="com.pubg.krmobile"
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/VN > /data/data/Sulphur/VN
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/KR > /data/data/Sulphur/VN
 chmod -R 777 /data/data/Sulphur &> /dev/null
 clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
 sleep 5
-su -c /data/data/Sulphur/VN &> /dev/null
+su -c /data/data/Sulphur/KR &> /dev/null
 rm -rf /data/data/Sulphur &> /dev/null
 mv /data/app/com.pubg.krmobile*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
 mv /storage/emulated/0/Android/*so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
@@ -117,14 +117,14 @@ done
 GAME="com.rekoo.pubgm"
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/VN > /data/data/Sulphur/VN
+curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/TW > /data/data/Sulphur/VN
 chmod -R 777 /data/data/Sulphur &> /dev/null
 clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
 sleep 5
-su -c /data/data/Sulphur/VN &> /dev/null
+su -c /data/data/Sulphur/TW &> /dev/null
 rm -rf /data/data/Sulphur &> /dev/null
 mv /data/app/com.rekoo.pubgm*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
 mv /storage/emulated/0/Android/*so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
