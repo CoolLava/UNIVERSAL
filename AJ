@@ -58,6 +58,7 @@ touch /data/data/$GAME/files &> /dev/null
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
+sleep 5
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
 
@@ -95,6 +96,7 @@ touch /data/data/$GAME/files &> /dev/null
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
+sleep 5
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
 
@@ -132,6 +134,7 @@ touch /data/data/$GAME/files &> /dev/null
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
+sleep 5
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
 
@@ -169,6 +172,7 @@ touch /data/data/$GAME/files &> /dev/null
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
+sleep 5
 mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
 
