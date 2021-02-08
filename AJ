@@ -76,6 +76,7 @@ do
 if [ ! $(pidof "$GAME") ]; then
 su -c killall -q $GAME  &> /dev/null
 rm -rf /data/media/0/Android/data/$GAME/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json /data/data/Sulphur &> /dev/null
+pm install -r /data/app/com.tencent.ig*/base.apk /data/app/com.vng.pubgmobile*/base.apk 
 clear
 echo ""
 echo -e "\e[35mAntiban Closed "
@@ -112,6 +113,7 @@ do
 if [ ! $(pidof "$GAME") ]; then
 su -c killall -q $GAME  &> /dev/null
 rm -rf /data/media/0/Android/data/$GAME/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json /data/data/Sulphur &> /dev/null
+pm install -r /data/app/com.pubg.krmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk  
 clear
 echo ""
 echo -e "\e[35mAntiban Closed "
@@ -148,6 +150,7 @@ do
 if [ ! $(pidof "$GAME") ]; then
 su -c killall -q $GAME  &> /dev/null
 rm -rf /data/media/0/Android/data/$GAME/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json /data/data/Sulphur &> /dev/null
+pm install -r /data/app/com.rekoo.pubgm*/base.apk /data/app/com.vng.pubgmobile*/base.apk  
 clear
 echo ""
 echo -e "\e[35mAntiban Closed "
@@ -184,6 +187,7 @@ do
 if [ ! $(pidof "$GAME") ]; then
 su -c killall -q $GAME  &> /dev/null
 rm -rf /data/media/0/Android/data/$GAME/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/SaveGames/*json /data/data/Sulphur &> /dev/null
+pm install -r /data/app/com.vng.pubgmobile*/base.apk /data/app/com.vng.pubgmobile*/base.apk 
 clear
 echo ""
 echo -e "\e[35mAntiban Closed "
