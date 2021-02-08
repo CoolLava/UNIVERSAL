@@ -29,8 +29,6 @@ su -c iptables --flush
     echo -e "${OG}    ×    Global | Korean | Taiwan | Vietnam     ×${NORMAL}"
     echo -e "${OG}    0•••••••••••••••••••••••••••••••••••••••••••0${NORMAL}"
     echo ""
-    echo -e "\e[33mWarning :- ESP may Lead To Ban , Avoid ESP"
-    echo ""
   echo -e "${RED_TEXT}•••••••••••••••••••••••••••••••••>>>>>>>>${NORMAL}"
     echo -e "${MENU}••${NUMBER} 1)${MENU} GLOBAL ANTIBAN ${NORMAL}"
     echo -e "${MENU}••${NUMBER} 2)${MENU} KOREA ANTIBAN ${NORMAL}"
