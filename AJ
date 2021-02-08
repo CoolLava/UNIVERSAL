@@ -53,31 +53,26 @@ su -c iptables --flush
       case $opt in
       1) clear;
 GAME="com.tencent.ig"
+DA=$(ls /data/app | grep com.tencent.ig)
+
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/GL > /data/data/Sulphur/VN
-chmod -R 777 /data/data/Sulphur &> /dev/null
-clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
-sleep 5
-su -c /data/data/Sulphur/GL &> /dev/null
-mv /data/app/com.tencent.ig*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
-mv /storage/emulated/0/Android/*so /data/app/com.tencent.ig*/lib/arm*/ &> /dev/null
-chmod -R 755 /data/app/com.tencent.ig*/lib/arm* &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/GL &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/GL &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/GL &> /dev/null
-sleep 2
-su -c /data/data/Sulphur/GL &> /dev/null
-rm -rf /data/data/Sulphur &> /dev/null
+mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
+
+touch /data/app/$DA/lib/arm/libtersafe.so  &>/dev/null
+touch /data/app/$DA/lib/arm64/libtersafe.so  &>/dev/null
+mv /data/app/$DA/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/  &>/dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm*/  &>/dev/null
+chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
+sleep 80
+mv /data/app/$DA/lib/arm/{libtersafe.s,libtersafe.so}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.s,libtersafe.so}  &>/dev/null
 
 done
-sleep 10
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -94,31 +89,26 @@ done
       ;;
       2) clear;
 GAME="com.pubg.krmobile"
+DA=$(ls /data/app | grep com.pubg.krmobile)
+
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/KR > /data/data/Sulphur/VN
-chmod -R 777 /data/data/Sulphur &> /dev/null
-clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
-sleep 5
-su -c /data/data/Sulphur/KR &> /dev/null
-mv /data/app/com.pubg.krmobile*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
-mv /storage/emulated/0/Android/*so /data/app/com.pubg.krmobile*/lib/arm*/ &> /dev/null
-chmod -R 755 /data/app/com.pubg.krmobile*/lib/arm* &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/KR &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/KR &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/KR &> /dev/null
-sleep 2
-su -c /data/data/Sulphur/KR &> /dev/null
-rm -rf /data/data/Sulphur &> /dev/null
+mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
+
+touch /data/app/$DA/lib/arm/libtersafe.so  &>/dev/null
+touch /data/app/$DA/lib/arm64/libtersafe.so  &>/dev/null
+mv /data/app/$DA/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/  &>/dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm*/  &>/dev/null
+chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
+sleep 80
+mv /data/app/$DA/lib/arm/{libtersafe.s,libtersafe.so}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.s,libtersafe.so}  &>/dev/null
 
 done
-sleep 10
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -135,31 +125,26 @@ done
       ;;
       3) clear;
 GAME="com.rekoo.pubgm"
+DA=$(ls /data/app | grep com.rekoo.pubgm)
+
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/TW > /data/data/Sulphur/VN
-chmod -R 777 /data/data/Sulphur &> /dev/null
-clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
-sleep 5
-su -c /data/data/Sulphur/TW &> /dev/null
-mv /data/app/com.rekoo.pubgm*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
-mv /storage/emulated/0/Android/*so /data/app/com.rekoo.pubgm*/lib/arm*/ &> /dev/null
-chmod -R 755 /data/app/com.rekoo.pubgm*/lib/arm* &> /dev/null
-done
-sleep 1
-su -c /data/data/Sulphur/TW &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/TW &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/TW &> /dev/null
-sleep 2
-su -c /data/data/Sulphur/TW &> /dev/null
-rm -rf /data/data/Sulphur &> /dev/null
+mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
 
-sleep 10
+touch /data/app/$DA/lib/arm/libtersafe.so  &>/dev/null
+touch /data/app/$DA/lib/arm64/libtersafe.so  &>/dev/null
+mv /data/app/$DA/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/  &>/dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm*/  &>/dev/null
+chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
+sleep 80
+mv /data/app/$DA/lib/arm/{libtersafe.s,libtersafe.so}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.s,libtersafe.so}  &>/dev/null
+
+done
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -176,30 +161,26 @@ done
             ;;
       4) clear;
 GAME="com.vng.pubgmobile"
+DA=$(ls /data/app | grep com.vng.pubgmobile)
+
 rm -rf /data/data/$GAME/f* &> /dev/null
 touch /data/data/$GAME/files &> /dev/null
-curl https://raw.githubusercontent.com/CoolLava/UNIVERSAL/main/VN > /data/data/Sulphur/VN
-chmod -R 777 /data/data/Sulphur &> /dev/null
-clear
 su -c am start -n $GAME/com.epicgames.ue4.SplashActivity  &>/dev/null
 until pidof $GAME
 do
-sleep 5
-su -c /data/data/Sulphur/VN &> /dev/null
-mv /data/app/com.vng.pubgmobile*/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/ &> /dev/null
-mv /storage/emulated/0/Android/*so /data/app/com.vng.pubgmobile*/lib/arm*/ &> /dev/null
-chmod -R 755 /data/app/com.vng.pubgmobile*/lib/arm* &> /dev/null
+mv /data/app/$DA/lib/arm/{libtersafe.so,libtersafe.s}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.so,libtersafe.s}  &>/dev/null
+
+touch /data/app/$DA/lib/arm/libtersafe.so  &>/dev/null
+touch /data/app/$DA/lib/arm64/libtersafe.so  &>/dev/null
+mv /data/app/$DA/lib/arm*/{libUE4.so,libtprt.so} /storage/emulated/0/Android/  &>/dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm*/  &>/dev/null
+chmod -R 755 /data/app/$DA/lib/arm*  &>/dev/null
+sleep 80
+mv /data/app/$DA/lib/arm/{libtersafe.s,libtersafe.so}  &>/dev/null
+mv /data/app/$DA/lib/arm64/{libtersafe.s,libtersafe.so}  &>/dev/null
+
 done
-sleep 1
-su -c /data/data/Sulphur/VN &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/VN &> /dev/null
-sleep 1
-su -c /data/data/Sulphur/VN &> /dev/null
-sleep 2
-su -c /data/data/Sulphur/VN &> /dev/null
-rm -rf /data/data/Sulphur &> /dev/null
-sleep 10
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
