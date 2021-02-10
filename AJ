@@ -58,32 +58,17 @@ touch /data/data/$GAME/files &> /dev/null
 rm -rf /data/app/com.tencent.ig*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
 32BIT() {
 su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
+until pidof $GAME
+do
 sleep 5
-mv /data/app/$DA/lib/arm/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm/* &> /dev/null
+done
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -105,31 +90,13 @@ su -c am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null
 until pidof $GAME
 do
 sleep 5
-mv /data/app/$DA/lib/arm64/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm64/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm64/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm64/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm64/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm64/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm64/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm64/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
 done
 while true
 do
@@ -164,32 +131,17 @@ touch /data/data/$GAME/files &> /dev/null
 rm -rf /data/app/com.pubg.krmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
 32BIT() {
 su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+until pidof $GAME
+do
 sleep 5
-mv /data/app/$DA/lib/arm/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm/* &> /dev/null
+done
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -211,31 +163,13 @@ su -c am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/nul
 until pidof $GAME
 do
 sleep 5
-mv /data/app/$DA/lib/arm64/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm64/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm64/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm64/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm64/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm64/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm64/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm64/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
 done
 while true
 do
@@ -270,32 +204,17 @@ touch /data/data/$GAME/files &> /dev/null
 rm -rf /data/app/com.rekoo.pubgm*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
 32BIT() {
 su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
+until pidof $GAME
+do
 sleep 5
-mv /data/app/$DA/lib/arm/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm/* &> /dev/null
+done
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -317,31 +236,13 @@ su -c am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null
 until pidof $GAME
 do
 sleep 5
-mv /data/app/$DA/lib/arm64/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm64/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm64/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm64/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm64/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm64/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm64/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm64/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
 done
 while true
 do
@@ -376,32 +277,17 @@ touch /data/data/$GAME/files &> /dev/null
 rm -rf /data/app/com.vng.pubgmobile*/lib/arm*/{*Bug*,*arc*,*help*,*big*,*blb*,*npp*,*eng*,*zip*} &> /dev/null
 32BIT() {
 su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/null
+until pidof $GAME
+do
 sleep 5
-mv /data/app/$DA/lib/arm/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm/* &> /dev/null
+done
 while true
 do
 if [ ! $(pidof "$GAME") ]; then
@@ -423,31 +309,13 @@ su -c am start -n com.vng.pubgmobile/com.epicgames.ue4.SplashActivity &> /dev/nu
 until pidof $GAME
 do
 sleep 5
-mv /data/app/$DA/lib/arm64/{libzlib.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libIMSDK.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloud.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgcloudcore.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libGCloudVoice.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtprt.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libUE4.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libijkffmpeg.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libgnustl_shared.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libPandoraVideo.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libswappy.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libvlink.so,$RANDOM} &> /dev/null
-#CrashLibs
-mv /data/app/$DA/lib/arm64/{libTDataMaster.so,$RANDOM} &> /dev/null
-touch /data/app/$DA/lib/arm64/libTDataMaster.so &> /dev/null
-
-cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android/ &> /dev/null
+mv /data/app/$DA/lib/arm64/libTDataMaster.so /storage/emulated/0/Android/ &> /dev/null
+cp /data/app/$DA/lib/arm64/libtersafe.so /storage/emulated/0/Android &> /dev/null
 mv /data/app/$DA/lib/arm64/{libtersafe.so,$RANDOM} &> /dev/null
 mv /storage/emulated/0/Android/libtersafe.so /data/app/$DA/lib/arm64/ &> /dev/null
-chmod 755 /data/app/$DA/lib/arm64/libtersafe.so &> /dev/null
-
-sleep 16
-mv /data/app/$DA/lib/arm64/{libgamemaster.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libcubehawk.so,$RANDOM} &> /dev/null
-mv /data/app/$DA/lib/arm64/{libtgpa.so,$RANDOM} &> /dev/null
+mv /data/app/$DA/lib/arm64/libUE4.so /storage/emulated/0/Android/ &> /dev/null
+mv /storage/emulated/0/Android/*so /data/app/$DA/lib/arm64/ &> /dev/null
+chmod 755 /data/app/$DA/lib/arm64/* &> /dev/null
 done
 while true
 do
