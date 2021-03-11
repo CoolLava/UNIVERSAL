@@ -1,1 +1,1 @@
-echo "purchase shell if you want....dont use free trial 😂"
+Laudo ko sab chahiye antiban tak khud nahi bana paaraha chutiye sharam kar betichod
