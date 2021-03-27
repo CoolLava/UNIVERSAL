@@ -1,0 +1,5 @@
+SULPHUR=$((1+RANDOM % 10))
+sed -ri 's/pubg.krmobile" defaultValue="/pubg.krmobile" defaultValue="'${SULPHUR}'/' /data/system/users/0/settings_ssaid.xml
+sed -ri 's/rekoo.pubgm" defaultValue="/rekoo.pubgm" defaultValue="'${SULPHUR}'/' /data/system/users/0/settings_ssaid.xml
+sed -ri 's/vng.pubgmobile" defaultValue="/vng.pubgmobile" defaultValue="'${SULPHUR}'/' /data/system/users/0/settings_ssaid.xml
+sed -ri 's/tencent.ig" defaultValue="/tencent.ig" defaultValue="'${SULPHUR}'/' /data/system/users/0/settings_ssaid.xml
